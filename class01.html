@@ -56,6 +56,21 @@
 
 <!----[ TABS-2 ]-------------->
      <div id="tabs-2"> 
+         <button onclick="putNote2('shoulder.html')" type="button">肩痛</button>
+         <button onclick="putNote2('headache.html')" type="button">手痛</button>
+         <button onclick="putNote2('sinusites.html')" type="button">鼻塞</button>
+         <button onclick="putNote2('tooth.html')" type="button">牙痛</button>
+
+         <div id="noteNow2"></div>
+
+         <script>
+
+           function putNote2(index)
+           {
+                    var content = index;
+                    document.getElementById("noteNow2").innerHTML = '<object width="900" height="900" type="text/html" data='+content+'></object>';
+           }
+         </script>
   </div> 
 <!----[ END: TABS-2 ]------> 
 
