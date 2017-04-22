@@ -61,9 +61,7 @@ else {
 <!----[ TABS-2 ]-------------->
      <div id="tabs-2"> 
          <button onclick="putNote2('shoulder.html')" type="button">肩痛</button>
-         <button onclick="putNote2('headache.html')" type="button">手痛</button>
-         <button onclick="putNote2('sinusites.html')" type="button">鼻塞</button>
-         <button onclick="putNote2('tooth.html')" type="button">牙痛</button>
+         <button onclick="putNote2('armPoint.html')" type="button">手痛</button>
 
          <div id="noteNow2"></div>
 
@@ -81,7 +79,20 @@ else {
 
 <!----[ TABS-3 ]-------------->
      <div id="tabs-3"> 
-         <button onclick="location.href='sym_咳嗽.html'" type="button">咳嗽</button>
+         <button onclick="putNote3('knee.html')" type="button">膝痛</button>
+         <button onclick="putNote3('sciatic.html')" type="button">坐骨神經痛</button>
+
+         <div id="noteNow3"></div>
+
+         <script>
+
+           function putNote3(index)
+           {
+                    var content = index;
+                    document.getElementById("noteNow3").innerHTML = '<object width="900" height="900" type="text/html" data='+content+'></object>';
+           }
+         </script>
+
   </div> 
 <!----[ END: TABS-3 ]------> 
 
@@ -122,7 +133,8 @@ else {
      <div id="tabs-9"> 
          <button onclick="putNote9('concept_01.html')" type="button">經絡循行圖</button>
          <button onclick="putNote9('concept_02.html')" type="button">X型對應圖</button>
-         <button onclick="putNote9('sinusites.html')" type="button">耳穴全息</button>
+         <button onclick="putNote9('notice.html')" type="button">外治法的按推要點</button>
+         <button onclick="putNote9('earPoint.html')" type="button">耳穴全息</button>
 
          <div id="noteNow9"></div>
 
