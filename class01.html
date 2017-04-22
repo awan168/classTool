@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>上醫堂日用外治法查詢程式</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="tcmSymBase.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+</head>
+<body>
+         <img src="class01_title.gif" height="218" width="800"> 
+         <!--<p>數位人生哲學起課程式</p>-->
+ 
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-9">基本觀念</a></li>
+    <li><a href="#tabs-1">頭面五官問題</a></li>
+    <li><a href="#tabs-2">上肢問題</a></li>
+    <li><a href="#tabs-3">下肢問題</a></li>
+    <li><a href="#tabs-4">背部問題</a></li>
+    <li><a href="#tabs-5">五臟內科問題</a></li>
+    <li><a href="#tabs-6">婦科問題</a></li>
+    <li><a href="#tabs-7">失眠問題</a></li>
+    <li><a href="#tabs-8">便祕問題</a></li>
+  </ul>
+
+<!----[ TABS-1 ]-------------->
+     <div id="tabs-1"> 
+         <!--<button onclick="location.href='#eye'" type="button">眼睛問題</button>-->
+         <button onclick="putNote('eye.html')" type="button">眼睛問題</button>
+         <button onclick="putNote('headache.html')" type="button">頭痛</button>
+         <button onclick="putNote('sinusites.html')" type="button">鼻塞</button>
+         <button onclick="putNote('tooth.html')" type="button">牙痛</button>
+
+         <div id="noteNow"></div>
+
+         <script>
+
+           function putNote(index)
+           {
+                    var content = index;
+                    document.getElementById("noteNow").innerHTML = '<object width="900" height="900" type="text/html" data='+content+'></object>';
+           }
+         </script>
+
+  </div> 
+<!----[ END: TABS-1 ]------> 
+
+
+<!----[ TABS-2 ]-------------->
+     <div id="tabs-2"> 
+  </div> 
+<!----[ END: TABS-2 ]------> 
+
+
+<!----[ TABS-3 ]-------------->
+     <div id="tabs-3"> 
+         <button onclick="location.href='sym_咳嗽.html'" type="button">咳嗽</button>
+  </div> 
+<!----[ END: TABS-3 ]------> 
+
+
+<!----[ TABS-4 ]-------------->
+     <div id="tabs-4"> 
+  </div> 
+<!----[ END: TABS-4 ]------> 
+
+
+<!----[ TABS-5 ]-------------->
+     <div id="tabs-5"> 
+  </div> 
+<!----[ END: TABS-5 ]------> 
+
+
+<!----[ TABS-6 ]-------------->
+     <div id="tabs-6"> 
+         <button onclick="location.href='sym_貧血.html'" type="button">貧血</button>
+         <button onclick="location.href='sym_貧血.html'" type="button">貧血</button>
+  </div> 
+<!----[ END: TABS-6 ]------> 
+
+
+<!----[ TABS-7 ]-------------->
+     <div id="tabs-7"> 
+  </div> 
+<!----[ END: TABS-7 ]------> 
+
+
+<!----[ TABS-8 ]-------------->
+     <div id="tabs-8"> 
+  </div> 
+<!----[ END: TABS-8 ]------> 
+
+
+<!----[ TABS-9 ]-------------->
+     <div id="tabs-9"> 
+         <button onclick="putNote('concept_01.html')" type="button">經絡循行圖</button>
+         <button onclick="putNote('concept_02.html')" type="button">X型對應圖</button>
+         <button onclick="putNote('sinusites.html')" type="button">耳穴全息</button>
+
+         <div id="noteNow9"></div>
+
+         <script>
+
+           function putNote(index)
+           {
+                    var content = index;
+                    document.getElementById("noteNow9").innerHTML = '<object width="900" height="900" type="text/html" data='+content+'></object>';
+           }
+         </script>
+
+  </div> 
+<!----[ END: TABS-9 ]------> 
+
+
+<!----[ TABS-10 ]-------------->
+     <div id="tabs-10"> 
+  </div> 
+<!----[ END: TABS-10 ]------> 
+
+
+<!----[ TABS-11 ]-------------->
+     <div id="tabs-11"> 
+  </div> 
+<!----[ END: TABS-11 ]------> 
+
+
+ 
+</body>
+</html>
+
