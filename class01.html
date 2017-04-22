@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="tcmSymBase.js"></script>
   <script>
   $( function() {
     $( "#tabs" ).tabs();
@@ -102,15 +101,15 @@
 
 <!----[ TABS-9 ]-------------->
      <div id="tabs-9"> 
-         <button onclick="putNote('concept_01.html')" type="button">經絡循行圖</button>
-         <button onclick="putNote('concept_02.html')" type="button">X型對應圖</button>
-         <button onclick="putNote('sinusites.html')" type="button">耳穴全息</button>
+         <button onclick="putNote9('concept_01.html')" type="button">經絡循行圖</button>
+         <button onclick="putNote9('concept_02.html')" type="button">X型對應圖</button>
+         <button onclick="putNote9('sinusites.html')" type="button">耳穴全息</button>
 
          <div id="noteNow9"></div>
 
          <script>
 
-           function putNote(index)
+           function putNote9(index)
            {
                     var content = index;
                     document.getElementById("noteNow9").innerHTML = '<object width="900" height="900" type="text/html" data='+content+'></object>';
