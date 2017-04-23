@@ -82,6 +82,7 @@ else {
          <button onclick="putNote3('knee.html')" type="button">膝痛</button>
          <button onclick="putNote3('sciatic.html')" type="button">坐骨神經痛</button>
 
+
          <div id="noteNow3"></div>
 
          <script>
@@ -99,20 +100,68 @@ else {
 
 <!----[ TABS-4 ]-------------->
      <div id="tabs-4"> 
+
+         <button onclick="putNote4('back.html')" type="button">腰背痛</button>
+         <button onclick="putNote4('stiffNeck.html')" type="button">落枕</button>
+
+
+         <div id="noteNow4"></div>
+
+         <script>
+
+           function putNote4(index)
+           {
+                    var content = index;
+                    document.getElementById("noteNow4").innerHTML = '<object width="900" height="900" type="text/html" data='+content+'></object>';
+           }
+         </script>
+
   </div> 
 <!----[ END: TABS-4 ]------> 
 
 
 <!----[ TABS-5 ]-------------->
      <div id="tabs-5"> 
+
+         <button onclick="putNote5('5Organ.html')" type="button">五臟基礎</button>
+         <button onclick="putNote5('highBP.html')" type="button">高血壓</button>
+         <button onclick="putNote5('babyCold.html')" type="button">小兒感冒</button>
+         <button onclick="putNote5('formula.html')" type="button">居家常用方劑</button>
+
+
+         <div id="noteNow5"></div>
+
+         <script>
+
+           function putNote5(index)
+           {
+                    var content = index;
+                    document.getElementById("noteNow5").innerHTML = '<object width="900" height="900" type="text/html" data='+content+'></object>';
+           }
+         </script>
+
   </div> 
 <!----[ END: TABS-5 ]------> 
 
 
 <!----[ TABS-6 ]-------------->
      <div id="tabs-6"> 
-         <button onclick="location.href='sym_貧血.html'" type="button">貧血</button>
-         <button onclick="location.href='sym_貧血.html'" type="button">貧血</button>
+         <button onclick="putNote6('mcPain.html')" type="button">痛經</button>
+         <button onclick="putNote6('lady.html')" type="button">婦科大穴</button>
+         <button onclick="putNote6('beauty.html')" type="button">美容要穴</button>
+
+
+         <div id="noteNow6"></div>
+
+         <script>
+
+           function putNote6(index)
+           {
+                    var content = index;
+                    document.getElementById("noteNow6").innerHTML = '<object width="900" height="900" type="text/html" data='+content+'></object>';
+           }
+         </script>
+
   </div> 
 <!----[ END: TABS-6 ]------> 
 
