@@ -28,7 +28,7 @@
     <li><a href="#tabs-5">五臟內科問題</a></li>
     <li><a href="#tabs-6">婦科問題</a></li>
     <li><a href="#tabs-7">失眠問題</a></li>
-    <li><a href="#tabs-8">便祕問題</a></li>
+    <li><a href="#tabs-8">大便問題</a></li>
   </ul>
 
 <!----[ TABS-1 ]-------------->
@@ -84,6 +84,7 @@ else {
      <div id="tabs-3"> 
          <button onclick="putNote3('knee.html')" type="button">膝痛</button>
          <button onclick="putNote3('sciatic.html')" type="button">坐骨神經痛</button>
+         <button onclick="putNote3('ankle.html')" type="button">腳踝痛</button>
 
 
          <div id="noteNow3"></div>
@@ -129,6 +130,7 @@ else {
          <button onclick="putNote5('5Organ.html')" type="button">五臟基礎</button>
          <button onclick="putNote5('highBP.html')" type="button">高血壓</button>
          <button onclick="putNote5('babyCold.html')" type="button">小兒感冒</button>
+         <button onclick="putNote5('stomach.html')" type="button">胃痛</button>
          <button onclick="putNote5('formula.html')" type="button">居家常用方劑</button>
 
 
@@ -171,12 +173,41 @@ else {
 
 <!----[ TABS-7 ]-------------->
      <div id="tabs-7"> 
+         <button onclick="putNote7('insomnia.html')" type="button">失眠</button>
+
+
+
+         <div id="noteNow7"></div>
+
+         <script>
+
+           function putNote7(index)
+           {
+                    var content = index;
+                    document.getElementById("noteNow7").innerHTML = '<object width="900" height="1900" type="text/html" data='+content+'></object>';
+           }
+         </script>
   </div> 
 <!----[ END: TABS-7 ]------> 
 
 
 <!----[ TABS-8 ]-------------->
      <div id="tabs-8"> 
+         <button onclick="putNote8('constipation.html')" type="button">便祕</button>
+         <button onclick="putNote8('diarrhea.html')" type="button">腹瀉</button>
+
+
+
+         <div id="noteNow8"></div>
+
+         <script>
+
+           function putNote8(index)
+           {
+                    var content = index;
+                    document.getElementById("noteNow8").innerHTML = '<object width="900" height="1900" type="text/html" data='+content+'></object>';
+           }
+         </script>
   </div> 
 <!----[ END: TABS-8 ]------> 
 
