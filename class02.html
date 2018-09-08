@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>上醫堂日用外治法查詢程式</title>
+  <title>上善堂日用外治法查詢程式</title>
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -13,9 +13,37 @@
     $( "#tabs" ).tabs();
   } );
   </script>
+  <script>
+           function putAcupNote(Num, index)
+           {
+                    var content = index;
+                    var displayNow = ""
+                    if (Num == 1) { displayNow = "display_LU"}
+                    else if (Num == 2) { displayNow = "display_LI"}
+                    else if (Num == 3) { displayNow = "display_ST"}
+                    else if (Num == 4) { displayNow = "display_SP"}
+                    else if (Num == 5) { displayNow = "display_HT"}
+                    else if (Num == 6) { displayNow = "display_SI"}
+                    else if (Num == 7) { displayNow = "display_BL"}
+                    else if (Num == 8) { displayNow = "display_KI"}
+                    else if (Num == 9) { displayNow = "display_PC"}
+                    else if (Num == 10) { displayNow = "display_SJ"}
+                    else if (Num == 11) { displayNow = "display_GB"}
+                    else if (Num == 12) { displayNow = "display_LR"}
+                    document.getElementById(displayNow).innerHTML = '<object width="900" height="2900" type="text/html" data='+content+'></object>';
+                    //height="1900" 
+           }
+  </script>
+
+     <style>
+    img {
+       max-width: 100%;
+       height: auto;
+    }
+    </style>
 </head>
 <body>
-         <img src="class02_title.gif" height="218" width="700"> 
+         <img src="SST_Meridian_class_title.gif" height="218" width="700"> 
          <!--<p>數位人生哲學起課程式</p>-->
  
 <div id="tabs">
@@ -34,6 +62,7 @@
     <li><a href="#tabs-11">足少陽膽經</a></li>
     <li><a href="#tabs-12">足厥陰肝經</a></li>
 -->
+    <li><a href="#tabs-0_0">十二經絡循行圖</a></li>
     <li><a href="#tabs-1">肺經</a></li>
     <li><a href="#tabs-2">大腸經</a></li>
     <li><a href="#tabs-3">胃經</a></li>
@@ -46,26 +75,203 @@
     <li><a href="#tabs-10">三焦經</a></li>
     <li><a href="#tabs-11">膽經</a></li>
     <li><a href="#tabs-12">肝經</a></li>
+    <li><a href="#tabs-13">其它</a></li>
   </ul>
 
+<!----[ TABS-0_0 ]-------------->
+<div id="tabs-0_0"> 
+     <img src="top_concept_big.png">
+     <div id="noteNow9"></div>
+     <img src="YinYangXuXi.png">
+     <script>
+        document.getElementById("noteNow9").innerHTML = '<object width="100%" height="900" type="text/html" data=concept_02.html></object>';
+     </script>
+</div>
 <!----[ TABS-1 ]-------------->
-     <div id="tabs-1"> 
-     <img width="300" src="我的經絡圖_肺經_簡圖.gif">
-  </div> 
-<!----[ END: TABS-1 ]------> 
+<div id="tabs-1"> 
+<img width="300"  src="我的經絡圖_肺經_簡圖.gif"><br>
 
-<div id="tabs-2"> <img width="300"  src="我的經絡圖_大腸經_簡圖.gif"></div> 
-<div id="tabs-3"> <img width="300"  src="我的經絡圖_胃經_簡圖.gif"></div> 
-<div id="tabs-4"> <img width="300"  src="我的經絡圖_脾經_簡圖.gif"></div> 
-<div id="tabs-5"> <img width="300"  src="我的經絡圖_心經_簡圖.gif"></div> 
-<div id="tabs-6"> <img width="300"  src="我的經絡圖_小腸經_簡圖.gif"></div> 
-<div id="tabs-7"> <img width="300"  src="我的經絡圖_膀胱經_簡圖.gif"></div> 
-<div id="tabs-8"> <img width="300"  src="我的經絡圖_腎經_簡圖.gif"></div> 
-<div id="tabs-9"> <img width="300"  src="我的經絡圖_心包經_簡圖.gif"></div> 
-<div id="tabs-10"> <img width="300" src="我的經絡圖_三焦經_簡圖.gif"></div> 
-<div id="tabs-11"> <img width="300" src="我的經絡圖_膽經_簡圖.gif"></div> 
-<div id="tabs-12"> <img width="300" src="我的經絡圖_肝經_簡圖.gif"></div> 
+<button onclick="putAcupNote(1, 'acupointHtmlImage/LU10_魚際.html')" type="button">魚際</button>
+<button onclick="putAcupNote(1, 'acupointHtmlImage/LU11_少商.html')" type="button">少商</button>
+<button onclick="putAcupNote(1, 'acupointHtmlImage/LU1_中府.html')" type="button">中府</button>
+<button onclick="putAcupNote(1, 'acupointHtmlImage/LU3_天府.html')" type="button">天府</button>
+<button onclick="putAcupNote(1, 'acupointHtmlImage/LU5_尺澤.html')" type="button">尺澤</button>
+<button onclick="putAcupNote(1, 'acupointHtmlImage/LU6_孔最.html')" type="button">孔最</button>
+<button onclick="putAcupNote(1, 'acupointHtmlImage/LU7_列缺.html')" type="button">列缺</button>
+<button onclick="putAcupNote(1, 'acupointHtmlImage/LU8_經渠.html')" type="button">經渠</button>
+<button onclick="putAcupNote(1, 'acupointHtmlImage/LU9_太淵.html')" type="button">太淵</button>
+<div id="display_LU"></div>
 
+</div> 
+
+<div id="tabs-2"> 
+<img width="300"  src="我的經絡圖_大腸經_簡圖.gif"><br>
+<button onclick="putAcupNote(2, 'acupointHtmlImage/LI11_曲池.html')" type="button">曲池</button>
+<button onclick="putAcupNote(2, 'acupointHtmlImage/LI15_肩髃.html')" type="button">肩髃</button>
+<button onclick="putAcupNote(2, 'acupointHtmlImage/LI1_商陽.html')" type="button">商陽</button>
+<button onclick="putAcupNote(2, 'acupointHtmlImage/LI20_迎香.html')" type="button">迎香</button>
+<button onclick="putAcupNote(2, 'acupointHtmlImage/LI2_二間.html')" type="button">二間</button>
+<button onclick="putAcupNote(2, 'acupointHtmlImage/LI3_三間.html')" type="button">三間</button>
+<button onclick="putAcupNote(2, 'acupointHtmlImage/LI4_合谷.html')" type="button">合谷</button>
+<div id="display_LI"></div>
+</div> 
+
+<div id="tabs-3"> 
+<img width="300"  src="我的經絡圖_胃經_簡圖.gif"><br>
+<button onclick="putAcupNote(3, 'acupointHtmlImage/ST1_承泣.html')" type="button">承泣</button>
+<button onclick="putAcupNote(3, 'acupointHtmlImage/ST25_天樞.html')" type="button">天樞</button>
+<button onclick="putAcupNote(3, 'acupointHtmlImage/ST2_四白.html')" type="button">四白</button>
+<button onclick="putAcupNote(3, 'acupointHtmlImage/ST34_梁丘.html')" type="button">梁丘</button>
+<button onclick="putAcupNote(3, 'acupointHtmlImage/ST35_犢鼻.html')" type="button">犢鼻</button>
+<button onclick="putAcupNote(3, 'acupointHtmlImage/ST36_足三里.html')" type="button">足三里</button>
+<button onclick="putAcupNote(3, 'acupointHtmlImage/ST37_上巨虛.html')" type="button">上巨虛</button>
+<button onclick="putAcupNote(3, 'acupointHtmlImage/ST39_下巨虛.html')" type="button">下巨虛</button>
+<button onclick="putAcupNote(3, 'acupointHtmlImage/ST3_巨髎.html')" type="button">巨髎</button>
+<button onclick="putAcupNote(3, 'acupointHtmlImage/ST40_豐隆.html')" type="button">豐隆</button>
+<button onclick="putAcupNote(3, 'acupointHtmlImage/ST41_解溪.html')" type="button">解溪</button>
+<button onclick="putAcupNote(3, 'acupointHtmlImage/ST44_內庭.html')" type="button">內庭</button>
+<button onclick="putAcupNote(3, 'acupointHtmlImage/ST4_地倉.html')" type="button">地倉</button>
+<button onclick="putAcupNote(3, 'acupointHtmlImage/ST6_頰車.html')" type="button">頰車</button>
+<button onclick="putAcupNote(3, 'acupointHtmlImage/ST7_下關.html')" type="button">下關</button>
+<div id="display_ST"></div>
+</div> 
+
+<div id="tabs-4"> 
+<img width="300"  src="我的經絡圖_脾經_簡圖.gif"><br>
+<button onclick="putAcupNote(4, 'acupointHtmlImage/SP10_血海.html')" type="button">血海</button>
+<button onclick="putAcupNote(4, 'acupointHtmlImage/SP1_隱白.html')" type="button">隱白</button>
+<button onclick="putAcupNote(4, 'acupointHtmlImage/SP21_大包.html')" type="button">大包</button>
+<button onclick="putAcupNote(4, 'acupointHtmlImage/SP3_太白.html')" type="button">太白</button>
+<button onclick="putAcupNote(4, 'acupointHtmlImage/SP4_公孫.html')" type="button">公孫</button>
+<button onclick="putAcupNote(4, 'acupointHtmlImage/SP6_三陰交.html')" type="button">三陰交</button>
+<button onclick="putAcupNote(4, 'acupointHtmlImage/SP9_陰陵泉.html')" type="button">陰陵泉</button>
+<div id="display_SP"></div>
+</div> 
+
+<div id="tabs-5"> 
+<img width="300"  src="我的經絡圖_心經_簡圖.gif"><br>
+<button onclick="putAcupNote(5, 'acupointHtmlImage/HT1_極泉.html')" type="button">極泉</button>
+<button onclick="putAcupNote(5, 'acupointHtmlImage/HT3_少海.html')" type="button">少海</button>
+<button onclick="putAcupNote(5, 'acupointHtmlImage/HT4_靈道.html')" type="button">靈道</button>
+<button onclick="putAcupNote(5, 'acupointHtmlImage/HT5_通裡.html')" type="button">通裡</button>
+<button onclick="putAcupNote(5, 'acupointHtmlImage/HT6_陰郄.html')" type="button">陰郄</button>
+<button onclick="putAcupNote(5, 'acupointHtmlImage/HT7_神門.html')" type="button">神門</button>
+<button onclick="putAcupNote(5, 'acupointHtmlImage/HT8_少府.html')" type="button">少府</button>
+<button onclick="putAcupNote(5, 'acupointHtmlImage/HT9_少衝.html')" type="button">少衝</button>
+<div id="display_HT"></div>
+</div> 
+
+<div id="tabs-6"> 
+<img width="300"  src="我的經絡圖_小腸經_簡圖.gif"><br>
+<button onclick="putAcupNote(6, 'acupointHtmlImage/SI11_天宗.html')" type="button">天宗</button>
+<button onclick="putAcupNote(6, 'acupointHtmlImage/SI19_聽宮.html')" type="button">聽宮</button>
+<button onclick="putAcupNote(6, 'acupointHtmlImage/SI1_少澤.html')" type="button">少澤</button>
+<button onclick="putAcupNote(6, 'acupointHtmlImage/SI3_後溪.html')" type="button">後溪</button>
+<button onclick="putAcupNote(6, 'acupointHtmlImage/SI6_養老.html')" type="button">養老</button>
+<button onclick="putAcupNote(6, 'acupointHtmlImage/SI7_支正.html')" type="button">支正</button>
+<button onclick="putAcupNote(6, 'acupointHtmlImage/SI8_小海.html')" type="button">小海</button>
+<div id="display_SI"></div>
+</div> 
+
+<div id="tabs-7"> 
+<img width="300"  src="我的經絡圖_膀胱經_簡圖.gif"><br>
+<button onclick="putAcupNote(7, 'acupointHtmlImage/BL11_大杼.html')" type="button">大杼</button>
+<button onclick="putAcupNote(7, 'acupointHtmlImage/BL1_睛明.html')" type="button">睛明</button>
+<button onclick="putAcupNote(7, 'acupointHtmlImage/BL40_委中.html')" type="button">委中</button>
+<button onclick="putAcupNote(7, 'acupointHtmlImage/BL57_承山.html')" type="button">承山</button>
+<button onclick="putAcupNote(7, 'acupointHtmlImage/BL58_飛揚.html')" type="button">飛揚</button>
+<button onclick="putAcupNote(7, 'acupointHtmlImage/BL60_崑崙.html')" type="button">崑崙</button>
+<button onclick="putAcupNote(7, 'acupointHtmlImage/BL62_申脈.html')" type="button">申脈</button>
+<button onclick="putAcupNote(7, 'acupointHtmlImage/BL63_金門.html')" type="button">金門</button>
+<button onclick="putAcupNote(7, 'acupointHtmlImage/BL67_至陰.html')" type="button">至陰</button>
+<div id="display_BL"></div>
+</div> 
+
+<div id="tabs-8"> 
+<img width="300"  src="我的經絡圖_腎經_簡圖.gif"><br>
+<button onclick="putAcupNote(8, 'acupointHtmlImage/KI10_陰谷.html')" type="button">陰谷</button>
+<button onclick="putAcupNote(8, 'acupointHtmlImage/KI1_湧泉.html')" type="button">湧泉</button>
+<button onclick="putAcupNote(8, 'acupointHtmlImage/KI2_然谷.html')" type="button">然谷</button>
+<button onclick="putAcupNote(8, 'acupointHtmlImage/KI3_太溪.html')" type="button">太溪</button>
+<button onclick="putAcupNote(8, 'acupointHtmlImage/KI4_大鐘.html')" type="button">大鐘</button>
+<button onclick="putAcupNote(8, 'acupointHtmlImage/KI6_照海.html')" type="button">照海</button>
+<button onclick="putAcupNote(8, 'acupointHtmlImage/KI7_復溜.html')" type="button">復溜</button>
+<button onclick="putAcupNote(8, 'acupointHtmlImage/KI9_築賓.html')" type="button">築賓</button>
+<div id="display_KI"></div>
+</div> 
+
+<div id="tabs-9"> 
+<img width="300"  src="我的經絡圖_心包經_簡圖.gif"><br>
+<button onclick="putAcupNote(9, 'acupointHtmlImage/PC2_天泉.html')" type="button">天泉</button>
+<button onclick="putAcupNote(9, 'acupointHtmlImage/PC3_曲澤.html')" type="button">曲澤</button>
+<button onclick="putAcupNote(9, 'acupointHtmlImage/PC4_郄門.html')" type="button">郄門</button>
+<button onclick="putAcupNote(9, 'acupointHtmlImage/PC6_內關.html')" type="button">內關</button>
+<button onclick="putAcupNote(9, 'acupointHtmlImage/PC8_勞宮.html')" type="button">勞宮</button>
+<div id="display_PC"></div>
+</div> 
+
+<div id="tabs-10"> 
+<img width="300" src="我的經絡圖_三焦經_簡圖.gif"><br>
+<button onclick="putAcupNote(10, 'acupointHtmlImage/SJ17_翳風.html')" type="button">翳風</button>
+<button onclick="putAcupNote(10, 'acupointHtmlImage/SJ2_液門.html')" type="button">液門</button>
+<button onclick="putAcupNote(10, 'acupointHtmlImage/SJ4_陽池.html')" type="button">陽池</button>
+<button onclick="putAcupNote(10, 'acupointHtmlImage/SJ5_外關.html')" type="button">外關</button>
+<button onclick="putAcupNote(10, 'acupointHtmlImage/SJ6_支溝.html')" type="button">支溝</button>
+<div id="display_SJ"></div>
+</div> 
+
+<div id="tabs-11"> 
+<img width="300" src="我的經絡圖_膽經_簡圖.gif"><br>
+<button onclick="putAcupNote(11, 'acupointHtmlImage/GB1_瞳子髎.html')" type="button">瞳子髎</button>
+<button onclick="putAcupNote(11, 'acupointHtmlImage/GB20_風池.html')" type="button">風池</button>
+<button onclick="putAcupNote(11, 'acupointHtmlImage/GB21_肩井.html')" type="button">肩井</button>
+<button onclick="putAcupNote(11, 'acupointHtmlImage/GB25_京門.html')" type="button">京門</button>
+<button onclick="putAcupNote(11, 'acupointHtmlImage/GB26_帶脈.html')" type="button">帶脈</button>
+<button onclick="putAcupNote(11, 'acupointHtmlImage/GB30_環跳.html')" type="button">環跳</button>
+<button onclick="putAcupNote(11, 'acupointHtmlImage/GB31_風市.html')" type="button">風市</button>
+<button onclick="putAcupNote(11, 'acupointHtmlImage/GB34_陽陵泉.html')" type="button">陽陵泉</button>
+<button onclick="putAcupNote(11, 'acupointHtmlImage/GB37_光明.html')" type="button">光明</button>
+<button onclick="putAcupNote(11, 'acupointHtmlImage/GB40_丘墟.html')" type="button">丘墟</button>
+<button onclick="putAcupNote(11, 'acupointHtmlImage/GB41_足臨泣.html')" type="button">足臨泣</button>
+<button onclick="putAcupNote(11, 'acupointHtmlImage/GB8_率谷.html')" type="button">率谷</button>
+<div id="display_GB"></div>
+</div> 
+
+<div id="tabs-12"> 
+<img width="300" src="我的經絡圖_肝經_簡圖.gif"><br>
+<button onclick="putAcupNote(12, 'acupointHtmlImage/LR13_章門.html')" type="button">章門</button>
+<button onclick="putAcupNote(12, 'acupointHtmlImage/LR14_期門.html')" type="button">期門</button>
+<button onclick="putAcupNote(12, 'acupointHtmlImage/LR1_大敦.html')" type="button">大敦</button>
+<button onclick="putAcupNote(12, 'acupointHtmlImage/LR2_行間.html')" type="button">行間</button>
+<button onclick="putAcupNote(12, 'acupointHtmlImage/LR3_太衝.html')" type="button">太衝</button>
+<button onclick="putAcupNote(12, 'acupointHtmlImage/LR5_蠡溝.html')" type="button">蠡溝</button>
+<button onclick="putAcupNote(12, 'acupointHtmlImage/LU10_魚際.html')" type="button">魚際</button>
+
+<div id="display_LR"></div>
+</div> 
+
+
+<!----[ TABS-13 ]-------------->
+<div id="tabs-13"> 
+<button onclick="location.href='class01.html'" type="button">外治法</button>
+<button onclick="putNote('acupointToSymp.html')" type="button">一見病證立刻連想的穴位</button>
+<button onclick="putNote('oneAcupoint.html')" type="button">單穴治證表</button>
+<button onclick="putNote('about.html')" type="button">連絡林醫師</button>
+<br>
+         <div id="noteNow"></div>
+
+<script>
+           function putNote(index)
+           {
+                    var content = index;
+                    document.getElementById("noteNow").innerHTML = '<object width="900" height="2900" type="text/html" data='+content+'></object>';
+                    //height="1900" 
+           }
+</script>
+
+
+
+</div>
 
 
 
