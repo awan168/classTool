@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>上善堂養生抗老實務必修課程</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+  <script>
+           function putAcupNote(Num, index)
+           {
+                    var content = index;
+                    var displayNow = ""
+                    if (Num == 1) { displayNow = "display_LU"}
+                    else if (Num == 2) { displayNow = "display_LI"}
+                    else if (Num == 3) { displayNow = "display_ST"}
+                    else if (Num == 4) { displayNow = "display_SP"}
+                    else if (Num == 5) { displayNow = "display_HT"}
+                    else if (Num == 6) { displayNow = "display_SI"}
+                    else if (Num == 7) { displayNow = "display_BL"}
+                    else if (Num == 8) { displayNow = "display_KI"}
+                    else if (Num == 9) { displayNow = "display_PC"}
+                    else if (Num == 10) { displayNow = "display_SJ"}
+                    else if (Num == 11) { displayNow = "display_GB"}
+                    else if (Num == 12) { displayNow = "display_LR"}
+                    document.getElementById(displayNow).innerHTML = '<object width="900" height="2900" type="text/html" data='+content+'></object>';
+                    //height="1900" 
+           }
+  </script>
+
+     <style>
+     /* Popup container - can be anything you want */
+     .popup {
+       position: relative;
+       display: inline-block;
+       cursor: pointer;
+       -webkit-user-select: none;
+       -moz-user-select: none;
+       -ms-user-select: none;
+       user-select: none;
+     }
+     
+     /* The actual popup */
+     .popup .popuptext {
+       visibility: hidden;
+       width: 460px;
+       background-color: #555;
+       color: #fff;
+       text-align: center;
+       border-radius: 12px;
+       padding: 12px 0;
+       position: absolute;
+       z-index: 1;
+       bottom: 125%;
+       left: 50%;
+       margin-left: -80px;
+     }
+     
+     /* Popup arrow */
+     .popup .popuptext::after {
+       content: "";
+       position: absolute;
+       top: 100%;
+       left: 50%;
+       margin-left: -5px;
+       border-width: 5px;
+       border-style: solid;
+       border-color: #555 transparent transparent transparent;
+     }
+     
+     /* Toggle this class - hide and show the popup */
+     .popup .show {
+       visibility: visible;
+       -webkit-animation: fadeIn 1s;
+       animation: fadeIn 1s;
+     }
+     
+     /* Add animation (fade in the popup) */
+     @-webkit-keyframes fadeIn {
+       from {opacity: 0;} 
+       to {opacity: 1;}
+     }
+     
+     @keyframes fadeIn {
+       from {opacity: 0;}
+       to {opacity:1 ;}
+     }
+  </style>
+
+     <style>
+    img {
+       max-width: 100%;
+       height: auto;
+    }
+    div.a{
+    width: auto;
+    border: 1px solid black;
+    }
+    </style>
+</head>
+<body>
+         <img src="class03_title.png" height="218" width="700" > 
+         <!--<p>數位人生哲學起課程式</p>-->
+ 
+<div id="tabs">
+  <ul>
+<!---    <li><a href="#tabs-9">基本觀念</a></li> 
+    <li><a href="#tabs-1">手太陰肺經</a></li>
+    <li><a href="#tabs-2">手陽明大腸經</a></li>
+    <li><a href="#tabs-3">足陽明胃經</a></li>
+    <li><a href="#tabs-4">足太陰脾經</a></li>
+    <li><a href="#tabs-5">手少陰心經</a></li>
+    <li><a href="#tabs-6">手太陽小腸經</a></li>
+    <li><a href="#tabs-7">足太陽膀胱經</a></li>
+    <li><a href="#tabs-8">足少陰腎經</a></li>
+    <li><a href="#tabs-9">手厥陰心包經</a></li>
+    <li><a href="#tabs-10">手少陽三焦經</a></li>
+    <li><a href="#tabs-11">足少陽膽經</a></li>
+    <li><a href="#tabs-12">足厥陰肝經</a></li>
+-->
+    <li><a href="#tabs-0_0">中醫養生健康總綱要</a></li>
+    <li><a href="#tabs-1">六大健康標準</a></li>
+    <li><a href="#tabs-2">先天之氣與後天之氣</a></li>
+    <li><a href="#tabs-3">陰陽虛實</a></li>
+<!---    <li><a href="#tabs-4">暖身之要</a></li>
+    <li><a href="#tabs-5">心經</a></li>
+    <li><a href="#tabs-6">小腸經</a></li>
+    <li><a href="#tabs-7">膀胱經</a></li>
+    <li><a href="#tabs-8">腎經</a></li>
+    <li><a href="#tabs-9">心包經</a></li>
+    <li><a href="#tabs-10">三焦經</a></li>
+    <li><a href="#tabs-11">膽經</a></li>
+    <li><a href="#tabs-12">肝經</a></li>
+--->
+    <li><a href="#tabs-13">其它</a></li>
+  </ul>
+
+<!----[ TABS-0_0 ]-------------->
+<div id="tabs-0_0"> 
+<h1>
+
+<div class="popup" onclick="popupFunction()">六淫
+<span class="popuptext" id="myPopup">六淫是指包括風、寒、暑、濕、燥、火六種源於外界導致人身病氣的元素</span>
+</div>不侵，七情和宜，內外無因，<br>
+陰平陽密，精純神凝，氣盛血旺，<br>
+三焦皆寧，先天長久，後天常興，<br>
+心開肝舒，中州穩固，肺清腎強，<br>
+六經咸安，八綱合紀，經絡通暢，<br>
+營衛調和，勿藥有喜，水火既濟! <br>
+</h1>
+<br>
+<br>
+思定則情忘<br>
+腹虛則氣運<br>
+陽密則陰平<br>
+心死則神活<br>
+飯水分則後天強<br>
+寒熱適則先天固<br>
+去毒害則異病消<br>
+腳力勤則老化緩<br>
+腎氣足則人常青<br>
+六標達則諸病息<br>
+七情平則身自安<br>
+八綱正則體常泰<br>
+
+<script>
+// When the user clicks on div, open the popup
+function popupFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+
+</div>
+
+
+
+<!----[ TABS-1 ]-------------->
+<div id="tabs-1"> 
+<h3>身體健康的中醫六大標準為:<br>
+<button onclick="putNote1('standard_吃.html')" type="button">吃</button>
+<button onclick="putNote1('standard_喝.html')" type="button">喝</button>
+<button onclick="putNote1('standard_拉.html')" type="button">拉</button>
+<button onclick="putNote1('standard_撒.html')" type="button">撒</button>
+<button onclick="putNote1('standard_睡.html')" type="button">睡</button>
+<button onclick="putNote1('standard_寒熱.html')" type="button">寒熱</button><br>
+</h3>
+<div id="noteNow1"></div>
+
+<script>
+           function putNote1(index)
+           {
+                    var content = index;
+                    document.getElementById("noteNow1").innerHTML = '<object width="900" height="2900" type="text/html" data='+content+'></object>';
+                    //height="1900" 
+           }
+</script>
+
+</div> 
+
+<!----[ TABS]-------------->
+<div id="tabs-2"> 
+<img  src="先天和後天之氣.png"><br>
+我們在中醫學理上稱人體之氣，統稱為真氣。按照先、後天分，分先天之氣和後天之氣。<br>
+先天之氣指源於腎中的氣，我們定位它是元氣(元有、本有的氣)。<br>
+先天之氣可說是一生下來我們就有的能量存款，用完了就沒有了。<br>
+而後天之氣源於肺吸入的自然界的清氣，和脾胃所化生的水谷精氣，<br>
+兩者結合以後，積於胸中，定義為宗氣。<br>
+後天之氣不同於先天之氣，它是可以不斷地儲值進去的。<br>
+證諸現代醫學的原理，我們注意到的是: <br>
+先天之氣可以說就是我們的內分泌系統的能力。<br>
+一旦內分泌系統開始虛衰，先天之氣就不停地流失中。<br>
+所以老化的產生是每個人都無可避免的。<br>
+而後天之氣，也就是我們日用的身體能量，這是一直在補充的。<br>
+但也可能因身體機能的不斷衰退，後天之氣也無法補足而死亡。<br>
+在防止老化的過程中，避免先天之氣的流失及注意後天之氣生成功能的旺盛是一個最重要的重點!<br>
+
+</div> 
+
+
+<!----[ TABS]-------------->
+<div id="tabs-3"> 
+<img  src="陰陽虛實.png"><br>
+</div> 
+
+<!----[ TABS]-------------->
+<div id="tabs-4"> 
+
+</div> 
+
+
+<!----[ TABS-13 ]-------------->
+<div id="tabs-13"> 
+<button onclick="location.href='class01.html'" type="button">外治法</button>
+<!---<button onclick="putNote('acupointToSymp.html')" type="button">一見病證立刻連想的穴位</button>--->
+<button onclick="putNote('oneAcupoint.html')" type="button">單穴治證表</button>
+<button onclick="putNote('notice.html')" type="button">外治法的按推要點</button>
+<button onclick="putNote('moxa.html')" type="button">溫灸要穴</button>
+<button onclick="putNote('freeClinic.html')" type="button">免費中醫檢測調理門診</button>
+<button onclick="putNote('about.html')" type="button">連絡林醫師</button>
+<br>
+         <div id="noteNow"></div>
+
+<script>
+           function putNote(index)
+           {
+                    var content = index;
+                    document.getElementById("noteNow").innerHTML = '<object width="900" height="2900" type="text/html" data='+content+'></object>';
+                    //height="1900" 
+           }
+</script>
+
+
+
+</div>
+
+
+
+ 
+</body>
+</html>
+
