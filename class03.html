@@ -131,15 +131,7 @@
     <li><a href="#tabs-3">陰陽虛實</a></li>
     <li><a href="#tabs-4">暖身之要</a></li>
     <li><a href="#tabs-5">飲食心要</a></li>
-<!---    <li><a href="#tabs-5">心經</a></li>
-    <li><a href="#tabs-6">小腸經</a></li>
-    <li><a href="#tabs-7">膀胱經</a></li>
-    <li><a href="#tabs-8">腎經</a></li>
-    <li><a href="#tabs-9">心包經</a></li>
-    <li><a href="#tabs-10">三焦經</a></li>
-    <li><a href="#tabs-11">膽經</a></li>
-    <li><a href="#tabs-12">肝經</a></li>
---->
+    <li><a href="#tabs-6">固護腎氣</a></li>
     <li><a href="#tabs-13">其它</a></li>
   </ul>
 
@@ -261,6 +253,7 @@ function popupFunction() {
 <h3>飲食心要:<br>
 <button onclick="putNote5('c5_dinning_飯水分離.html')" type="button">飯水分離</button>
 <button onclick="putNote5('c5_dinning_炒米養生法.html')" type="button">炒米養生法</button>
+<button onclick="putNote5('c5_dinning_饑餓力.html')" type="button">饑餓力</button>
 </h3>
 <div id="noteNow5"></div>
 
@@ -269,6 +262,29 @@ function popupFunction() {
            {
                     var content = index;
                     document.getElementById("noteNow5").innerHTML = '<object width="900" height="2900" type="text/html" data='+content+'></object>';
+                    //height="1900" 
+           }
+</script>
+
+</div> 
+
+<!----[ TABS]-------------->
+<div id="tabs-6"> 
+<h3>固護腎氣大整理:<br>
+<button onclick="putNote6('c6_KQ_觀念與方法.html')" type="button">觀念與方法</button>
+<button onclick="putNote6('c6_KQ_食物.html')" type="button">食物</button>
+<button onclick="putNote6('c6_KQ_生活作息.html')" type="button">生活作息</button>
+<button onclick="putNote6('c6_KQ_起床護腰腎運動.html')" type="button">起床護腰腎運動</button>
+<button onclick="putNote6('c6_KQ_外治.html')" type="button">外治</button>
+<button onclick="putNote6('c6_KQ_地黃丸家族大整理.html')" type="button">地黃丸家族大整理</button>
+</h3>
+<div id="noteNow6"></div>
+
+<script>
+           function putNote6(index)
+           {
+                    var content = index;
+                    document.getElementById("noteNow6").innerHTML = '<object width="900" height="2900" type="text/html" data='+content+'></object>';
                     //height="1900" 
            }
 </script>
