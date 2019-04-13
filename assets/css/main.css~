@@ -3487,7 +3487,7 @@ input, select, textarea {
 			color: inherit;
 			cursor: pointer;
 			display: block;
-			font-size: 1.9em;
+			font-size: 0.9em;
 			padding: 0.625em 0;
 		}
 
@@ -3554,7 +3554,7 @@ input, select, textarea {
 		}
 
 			#menu > ul > li > ul a, #menu > ul > li > ul span {
-				font-size: 1.8em;
+				font-size: 0.8em;
 			}
 
 			#menu > ul > li > ul > li {
