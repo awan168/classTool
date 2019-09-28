@@ -114,6 +114,8 @@
     <li><a href="#tabs-0_0">中醫食物性味總綱</a></li>
     <li><a href="#tabs-1">五行性味說明</a></li>
     <li><a href="#tabs-2">蔬食寒熱表</a></li>
+    <li><a href="#tabs-3">飲食心要</a></li>
+    <li><a href="#tabs-4">糖的危害</a></li>
     <li><a href="#tabs-final">其它</a></li>
   </ul>
 
@@ -235,6 +237,46 @@
 
 </div> 
 
+
+<!----[ TABS]-------------->
+<div id="tabs-3"> 
+<h3>飲食心要:<br>
+<button onclick="putNote5('c5_dinning_飯水分離.html')" type="button">飯水分離</button>
+<button onclick="putNote5('c5_dinning_炒米養生法.html')" type="button">炒米養生法</button>
+<button onclick="putNote5('c5_dinning_饑餓力.html')" type="button">饑餓力</button>
+</h3>
+<div id="noteNow5"></div>
+
+<script>
+           function putNote5(index)
+           {
+                    var content = index;
+                    document.getElementById("noteNow5").innerHTML = '<object width="900" height="2900" type="text/html" data='+content+'></object>';
+                    //height="1900" 
+           }
+</script>
+
+</div> 
+
+<!----[ TABS]-------------->
+<div id="tabs-4"> 
+<h3>糖的危害:<br>
+<button onclick="putNote4('class0A_糖的基本知識.html')" type="button">糖的基本知識</button><br>
+<button onclick="putNote4('class0A_糖上癮及各種危害.html')" type="button">糖上癮及各種危害</button><br>
+<button onclick="putNote4('class0A_糖_日常注意要點.html')" type="button">糖_日常注意要點</button><br>
+</h3>
+<div id="noteNow4"></div>
+
+<script>
+           function putNote4(index)
+           {
+                    var content = index;
+                    document.getElementById("noteNow4").innerHTML = '<object width="900" height="2900" type="text/html" data='+content+'></object>';
+                    //height="1900" 
+           }
+</script>
+
+</div> 
 
 
  
