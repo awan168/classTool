@@ -282,10 +282,7 @@
 
 <!----[ TABS]-------------->
 <div id="tabs-5"> 
-<h3>
-日用中藥材:<br>
-
-<a name="fn_home"></a>
+<h3>日用中藥材:<br>
 
 <table align="left" border="0" cellpadding="1" cellspacing="1">
 <tr><td>
@@ -317,94 +314,12 @@
 </h3>
 </td></tr>
 
-
-
-
 <tr><td>
-<br><br>
-<a name="herb_01"><img src="dailyHerb_利水滲濕.png" width=500px></a>
+<br><br><a name="herb_01"><img src="dailyHerb_利水滲濕.png" width=500px></a>
 <br><img src="dailyHerbFig_利水滲濕.png">
-<br><a href="#fn_home"> <img src="icon_home2_s.gif" />Go back to top.</a><hr>
+<br><hr>
 </td></tr>
 
-
-<tr><td>
-<br><br><a name="herb_02"><img src="dailyHerb_溫裡.png" width=500px></a>
-<br><img src="dailyHerbFig_溫裡.png">
-<br><a href="#fn_home"> <img src="icon_home2_s.gif" />Go back to top.</a><hr>
-</td></tr>
-
-<tr><td>
-<br><br><a name="herb_03"><img src="dailyHerb_理氣.png" width=500px></a>
-<br><img src="dailyHerbFig_理氣.png">
-<br><a href="#fn_home"> <img src="icon_home2_s.gif" />Go back to top.</a><hr>
-</td></tr>
-
-<tr><td>
-<br><br><a name="herb_04"><img src="dailyHerb_消食.png" width=500px></a>
-<br><img src="dailyHerbFig_消食.png">
-<br><a href="#fn_home"> <img src="icon_home2_s.gif" />Go back to top.</a><hr>
-</td></tr>
-
-<tr><td>
-<br><br><a name="herb_05"><img src="dailyHerb_補氣.png" width=500px></a>
-<br><img src="dailyHerbFig_補氣1.png"><br>
-<br><img src="dailyHerbFig_補氣2.png"><br>
-<br><img src="dailyHerbFig_補氣3.png"><br>
-<br><a href="#fn_home"> <img src="icon_home2_s.gif" />Go back to top.</a><hr>
-</td></tr>
-
-<tr><td>
-<br><br><a name="herb_06"><img src="dailyHerb_補血.png" width=500px></a>
-<br><img src="dailyHerbFig_補血1.png"><br>
-<br><img src="dailyHerbFig_補血2.png"><br>
-<br><a href="#fn_home"> <img src="icon_home2_s.gif" />Go back to top.</a><hr>
-</td></tr>
-
-<tr><td>
-<br><br><a name="herb_07"><img src="dailyHerb_補陽.png" width=500px></a>
-<br><img src="dailyHerbFig_補陽.png">
-<br><a href="#fn_home"> <img src="icon_home2_s.gif" />Go back to top.</a><hr>
-</td></tr>
-
-<tr><td>
-<br><br><a name="herb_08"><img src="dailyHerb_補陰.png" width=500px></a>
-<br><img src="dailyHerbFig_補陰.png">
-<br><a href="#fn_home"> <img src="icon_home2_s.gif" />Go back to top.</a><hr>
-</td></tr>
-
-<tr><td>
-<br><br><a name="herb_09"><img src="dailyHerb_清熱涼血.png" width=500px></a>
-<br><img src="dailyHerbFig_清熱涼血.png">
-<br><a href="#fn_home"> <img src="icon_home2_s.gif" />Go back to top.</a><hr>
-</td></tr>
-
-<tr><td>
-<br><br><a name="herb_10"><img src="dailyHerb_清熱解毐.png" width=500px></a>
-<br><img src="dailyHerbFig_清熱解毐.png">
-<br><a href="#fn_home"> <img src="icon_home2_s.gif" />Go back to top.</a><hr>
-</td></tr>
-
-<tr><td>
-<br><br><a name="herb_11"><img src="dailyHerb_活血怯瘀.png" width=500px></a>
-<br><img src="dailyHerbFig_活血怯瘀.png">
-<br><a href="#fn_home"> <img src="icon_home2_s.gif" />Go back to top.</a><hr>
-</td></tr>
-
-<tr><td>
-<br><br><a name="herb_12"><img src="dailyHerb_止咳平喘.png" width=500px></a>
-<br><img src="dailyHerbFig_止咳平喘.png">
-<br><a href="#fn_home"> <img src="icon_home2_s.gif" />Go back to top.</a><hr>
-</td></tr>
-
-<tr><td>
-<br><br><a name="herb_13"><img src="dailyHerb_強健脾胃.png" width=500px></a>
-<br><img src="dailyHerbFig_強健脾胃1.png" width=500px><br>
-<br><img src="dailyHerbFig_強健脾胃2.png"><br>
-<br><a href="#fn_home"> <img src="icon_home2_s.gif" />Go back to top.</a><hr>
-</td></tr>
-
-</table>
 
 <!---<br><br>
 <a name="herb_01"><h2>利水滲濕: </h2></a>
@@ -426,9 +341,9 @@
 
 
 
+</table>
 
 </div> 
-
 
 
  
