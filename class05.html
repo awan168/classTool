@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>上善堂肺的藏象課程</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+  <script>
+           function putAcupNote(Num, index)
+           {
+                    var content = index;
+                    var displayNow = ""
+                    if (Num == 1) { displayNow = "display_LU"}
+                    else if (Num == 2) { displayNow = "display_LI"}
+                    else if (Num == 3) { displayNow = "display_ST"}
+                    else if (Num == 4) { displayNow = "display_SP"}
+                    else if (Num == 5) { displayNow = "display_HT"}
+                    else if (Num == 6) { displayNow = "display_SI"}
+                    else if (Num == 7) { displayNow = "display_BL"}
+                    else if (Num == 8) { displayNow = "display_KI"}
+                    else if (Num == 9) { displayNow = "display_PC"}
+                    else if (Num == 10) { displayNow = "display_SJ"}
+                    else if (Num == 11) { displayNow = "display_GB"}
+                    else if (Num == 12) { displayNow = "display_LR"}
+                    document.getElementById(displayNow).innerHTML = '<object width="900" height="2900" type="text/html" data='+content+'></object>';
+                    //height="1900" 
+           }
+  </script>
+
+
+
+
+     <style>
+     /* Popup container - can be anything you want */
+     .popup {
+       position: relative;
+       display: inline-block;
+       cursor: pointer;
+       -webkit-user-select: none;
+       -moz-user-select: none;
+       -ms-user-select: none;
+       user-select: none;
+     }
+     
+     /* The actual popup */
+     .popup .popuptext {
+       visibility: hidden;
+       width: 460px;
+       background-color: #555;
+       color: #fff;
+       text-align: center;
+       border-radius: 12px;
+       padding: 12px 0;
+       position: absolute;
+       z-index: 1;
+       bottom: 125%;
+       left: 50%;
+       margin-left: -80px;
+     }
+     
+     /* Popup arrow */
+     .popup .popuptext::after {
+       content: "";
+       position: absolute;
+       top: 100%;
+       left: 50%;
+       margin-left: -5px;
+       border-width: 5px;
+       border-style: solid;
+       border-color: #555 transparent transparent transparent;
+     }
+     
+     /* Toggle this class - hide and show the popup */
+     .popup .show {
+       visibility: visible;
+       -webkit-animation: fadeIn 1s;
+       animation: fadeIn 1s;
+     }
+     
+     /* Add animation (fade in the popup) */
+     @-webkit-keyframes fadeIn {
+       from {opacity: 0;} 
+       to {opacity: 1;}
+     }
+     
+     @keyframes fadeIn {
+       from {opacity: 0;}
+       to {opacity:1 ;}
+     }
+  </style>
+
+     <style>
+    img {
+       max-width: 100%;
+       height: auto;
+    }
+    div.a{
+    width: auto;
+    border: 1px solid black;
+    }
+    </style>
+</head>
+<body>
+         <img src="class05_title.jpg" height="218" width="700" > 
+         <!--<p>數位人生哲學起課程式</p>-->
+ 
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-0_0">肺的總綱</a></li>
+    <li><a href="#tabs-1">肺氣虛</a></li>
+    <li><a href="#tabs-2">肺陰虛</a></li>
+    <li><a href="#tabs-3">肺陽虛</a></li>
+    <li><a href="#tabs-4">寶瓶氣</a></li>
+    <li><a href="#tabs-5">鹽的重要</a></li>
+    <li><a href="#tabs-6">其它</a></li>
+  </ul>
+
+<!----[ TABS-0_0 ]-------------->
+<div id="tabs-0_0"> 
+<!---<div class="popup" onclick="popupFunction()">六淫
+<span class="popuptext" id="myPopup">六淫是指包括風、寒、暑、濕、燥、火六種源於外界導致人身病氣的元素</span>
+</div>
+--->
+<h3>肺的總綱:<br>
+<img  src="c5_肺的總綱.png"><br>
+
+<!---<script>
+// When the user clicks on div, open the popup
+function popupFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+--->
+
+</div>
+
+
+
+<!----[ TABS-1 ]-------------->
+<div id="tabs-1"> 
+<h3>肺氣虛:<br>
+<img  src="c5_肺氣虛.png"><br>
+
+</div> 
+<!----[ TABS-2 ]-------------->
+<div id="tabs-2"> 
+<h3>肺陰虛:<br>
+<img  src="c5_肺陰虛.png"><br>
+
+</div> 
+<!----[ TABS-3 ]-------------->
+<div id="tabs-3"> 
+<h3>肺陽虛:<br>
+<img  src="c5_肺陽虛.png"><br>
+
+</div> 
+<!----[ TABS-4 ]-------------->
+<div id="tabs-4"> 
+<h3>寶瓶氣:<br>
+<img  src="c5_寶瓶氣.png"><br>
+
+</div> 
+<!----[ TABS-5 ]-------------->
+<div id="tabs-5"> 
+<h3>鹽的重要:<br>
+<img  src="c5_鹽的重要.png"><br>
+
+</div> 
+<!----[ TABS-6 ]-------------->
+<div id="tabs-6"> 
+<h2>如果有其它的問題要連絡林醫師<br></h2>         
+<pre style="color: rgb(0, 0, 0); word-wrap: break-word; white-space: pre-wrap;">﻿
+<table align="left" border="0" cellpadding="1" cellspacing="1" width="300">
+<tr><td><ur>
+<h3>上善堂中醫健康診所<br>
+<h3>診所網站: <a href="https://www.sstnc.com">https://www.sstnc.com</a><br>
+<h3>臉書: <a href="https://www.facebook.com/groups/422893621472299/">上善堂中醫健康診所臉書粉絲頁</a><br>
+Email: sstnctcm@gmail.com<br>
+Phone Number : <b>(408)634-3877.</b><br>
+地址:  <a href="https://www.google.com/maps/place/12961+Village+Dr+Suite+C,+Saratoga,+CA+95070/@37.2809673,-122.0074115,17z/data=!3m1!4b1!4m5!3m4!1s0x808e4ab21bc8ea6d:0x9845b49b2a6a1932!8m2!3d37.2809673!4d-122.0052228">12961 Village Dr. Suite C Saratoga, CA 95070</a><br>
+<br>
+<img src="sst_BusinessCard.jpg">
+</b></h3>
+</ur></tr></td>
+</table>
+</pre>
+
+
+
+</div> 
+
+
+
+ 
+</body>
+</html>
+
