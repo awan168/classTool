@@ -111,6 +111,8 @@
 <button onclick="putNote1('standard.html')" type="button">六大健康標準</button>
 <button onclick="putNote1('身心靈保健的三大目標.html')" type="button">身心靈的全面提升</button>
 <button onclick="putNote1('健康人生的全部列表.html')" type="button">健康人生的全部列表</button>
+<a href="https://www.youtube.com/playlist?list=PL3xXKaTlrad6qTMvQmNeiQfAxBEiyDYNf" target="_blank">.</a>
+
 
 <div id="noteNow1"></div>
 
@@ -139,7 +141,19 @@
 </div>
 <div id="tabs-1"> <h3>益氣調血:<br>  <img  src="class0D_益氣調血.png"><br><img  src="class0D_益氣調血湯.png"><br></div>
 <div id="tabs-2"> <h3>女性抗老好食材:<br><img    src="class0D_女性抗老好食材.png"><br></div>
-<div id="tabs-3"> <h3>三大養生運動:<br>  <img  src="class0D_三大養生運動.png"><br></div>
+<div id="tabs-3"> <h3>三大養生運動:<br>  <img  src="class0D_三大養生運動.png"><br>
+<button onclick="putNote0('organ_耳朵三法.html')" type="button">全身臟腑運動</button>
+<button onclick="putNote0('c3_warming_三大熱身法.html')" type="button">三大熱身法</button>
+<div id="noteNow0"></div>
+<script>
+           function putNote0(index)
+           {
+                    var content = index;
+                    document.getElementById("noteNow0").innerHTML = '<object width="1000" height="2900" type="text/html" data='+content+'></object>';
+                    //height="1900"
+           }
+</script>
+</div>
 <div id="tabs-4"> 
 <h3>月經問題:<br>  
 <img  src="class0D_月經問題_01.png"><br>
