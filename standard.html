@@ -1,0 +1,26 @@
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+<h3>身體健康的中醫六大標準為:<br>
+<button onclick="putNote1('standard_吃.html')" type="button">吃</button>
+<button onclick="putNote1('standard_喝.html')" type="button">喝</button>
+<button onclick="putNote1('standard_拉.html')" type="button">拉</button>
+<button onclick="putNote1('standard_撒.html')" type="button">撒</button>
+<button onclick="putNote1('standard_睡.html')" type="button">睡</button>
+<button onclick="putNote1('standard_寒熱.html')" type="button">寒熱</button><br>
+</h3>
+<div id="noteNow1"></div>
+
+<script>
+           function putNote1(index)
+           {
+                    var content = index;
+                    document.getElementById("noteNow1").innerHTML = '<object width="1000" height="2900" type="text/html" data='+content+'></object>';
+                    //height="1900" 
+           }
+</script>
+
+</body>
+</html>
