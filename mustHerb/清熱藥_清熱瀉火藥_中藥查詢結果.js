@@ -1,0 +1,414 @@
+document.write(" \n\<!doctype html>\n\
+<html>\n\
+<head>\n\
+<a name=\"home\"></a> <center><span style=\"color: rgb(0, 0, 0); font-weight: bold; font-size:25px; font-family:標楷體; line-height:1.6\">清熱藥_清熱瀉火藥</span><br><meta charset=\"utf-8\"></head><body>\n\
+<button onclick=\"location.href='#石膏'\" type=\"button\">石膏</button><button onclick=\"location.href='#知母'\" type=\"button\">知母</button><button onclick=\"location.href='#蘆根'\" type=\"button\">蘆根</button><button onclick=\"location.href='#栝蔞根'\" type=\"button\">栝蔞根</button><button onclick=\"location.href='#竹葉'\" type=\"button\">竹葉</button><button onclick=\"location.href='#梔子'\" type=\"button\">梔子</button><button onclick=\"location.href='#夏枯草'\" type=\"button\">夏枯草</button><button onclick=\"location.href='#決明子'\" type=\"button\">決明子</button><br><br><br></center><center><table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 45%\">\n\
+<caption><b>【藥性寒熱補瀉分佈表】</b></caption><tr bgcolor=\"#ccffcc\"><td width=\"10%\" bgcolor=\"#fffaff\">-</td><td width=\"30%\">溫熱藥</td><td width=\"30%\">平藥</td><td width=\"30%\">寒涼藥</td></tr><tr><td bgcolor=\"#ccffff\">補藥</td><td ></td><td></td><td>知母☂ ,夏枯草☀ </td></tr><tr><td bgcolor=\"#ccffff\">平藥</td><td ></td><td></td><td></td></tr><tr><td bgcolor=\"#ccffff\">瀉藥</td><td ></td><td></td><td>石膏☂ ,蘆根,栝蔞根☂ ,竹葉☂ ,梔子☂ ,決明子☂ </td></tr></table></center> <br><center><table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 45%\">\n\
+<caption><b>【藥性升降收散動力分佈表】</b></caption><tr bgcolor=\"#e6ccff\"><td width=\"10%\" bgcolor=\"#fffaff\">-</td><td width=\"30%\">升性藥</td><td width=\"30%\">平藥</td><td width=\"30%\">降性藥</td></tr><tr><td bgcolor=\"#ffffcc\">散性藥</td><td>決明子☂ </td><td>蘆根</td><td>石膏☂ ,知母☂ ,竹葉☂ ,夏枯草☀ </td></tr><tr><td bgcolor=\"#ffffcc\">平藥</td><td></td><td></td><td></td></tr><tr><td bgcolor=\"#ffffcc\">收性藥</td><td></td><td>栝蔞根☂ </td><td>梔子☂ </td></tr></table></center> <br><center><table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 45%\"  class=\"center\">\n\
+<caption><b>【藥性燥濕分佈表】</b></caption><tr><td  bgcolor=\"#d7f8fa\" width=\"35%\">濕性藥</td><td bgcolor=\"#edf291\"width=\"30%\">中性藥</td><td bgcolor=\"#f5b59a\"width=\"35%\">燥性藥</td></tr><tr><td>石膏,知母,栝蔞根,竹葉,梔子,決明子</td><td>蘆根</td><td>夏枯草</td></tr></table></center>\n\
+<hr><a name=\"cpTable\"></a><a href=\"#home\">[top]</a><need> <center><table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 45%\">\n\
+<need> <caption> 清熱藥_清熱瀉火藥的比較</caption>\n\
+<need> <tr bgcolor=\"#ccffcc\" align=\"center\" ><td width=\"15%\">\n\
+<need>-\n\
+</td>\n\
+<need> <td>同\n\
+</td>\n\
+<need> <td>異\n\
+</td>\n\
+<need> </tr>\n\
+<need> <tr><td width=\"15%\"  bgcolor=\"#ffffcc\">\n\
+<need>石膏\n\
+</td><td rowspan=\"8\"> 清熱瀉火</td><need> <td>口鼻咽乾、發燒、中暑、黃痰黃鼻涕\n\
+</td>\n\
+<need> </tr>\n\
+<need> <tr><td width=\"15%\"  bgcolor=\"#ffffcc\">\n\
+<need>知母\n\
+</td>\n\
+<need> <td>心煩失眠、焦躁、小便不利、潮熱、夢遺\n\
+</td>\n\
+<need> </tr>\n\
+<need> <tr><td width=\"15%\"  bgcolor=\"#ffffcc\">\n\
+<need>蘆根\n\
+</td>\n\
+<need> <td>黏痰、黃痰、心煩、小便不利\n\
+</td>\n\
+<need> </tr>\n\
+<need> <tr><td width=\"15%\"  bgcolor=\"#ffffcc\">\n\
+<need>栝蔞根\n\
+</td>\n\
+<need> <td>黏痰、黃痰、胸痛、皮膚潰瘍、口渴\n\
+</td>\n\
+<need> </tr>\n\
+<need> <tr><td width=\"15%\"  bgcolor=\"#ffffcc\">\n\
+<need>竹葉\n\
+</td>\n\
+<need> <td>肺及氣管問題、心煩、小便痛、口舌瘡、小便短赤、糖尿病\n\
+</td>\n\
+<need> </tr>\n\
+<need> <tr><td width=\"15%\"  bgcolor=\"#ffffcc\">\n\
+<need>梔子\n\
+</td>\n\
+<need> <td>心煩、小便不利、皮膚潰瘍、便血、血尿、真心痛、發炎、吞嚥困難、胃灼熱、胃酸反逆\n\
+</td>\n\
+<need> </tr>\n\
+<need> <tr><td width=\"15%\"  bgcolor=\"#ffffcc\">\n\
+<need>夏枯草\n\
+</td>\n\
+<need> <td>小便不利、出血、發炎、視線模糊、眼睛紅、甲狀腺腫大、水腫_全身水腫、瘰癧\n\
+</td>\n\
+<need> </tr>\n\
+<need> <tr><td width=\"15%\"  bgcolor=\"#ffffcc\">\n\
+<need>決明子\n\
+</td>\n\
+<need> <td>眼睛紅、眼睛痛、頭痛眩暈、眼易流淚、便秘\n\
+</td>\n\
+<need> </tr>\n\
+<need> </table></center><br><br><pre style=\"color: rgb(0, 0, 0); word-wrap: break-word; white-space: pre-wrap;\"><a href=\"#home\">[top]</a>  <a name=\"石膏\"></a>\n\
+=========================\n\
+石膏\n\
+=========================\n\
+\n\
+<br><h3><table  border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px\"><tr><td align=\"center\" colspan=\"2\" bgcolor=\"#9feda3\">石膏</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>性味</td><td>辛、甘，大寒</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>歸經</td><td>肺胃</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>主治</td><td>清熱瀉火，除煩止渴收斂生肌</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>運用</td><td>1、用於氣分實熱證 2、用於肺熱咳喘 3、用於胃火牙痛 </td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>藥性</td><td><img src=\"寒.png\" width=30px>&nbsp<img src=\"瀉.png\" width=30px>&nbsp<img src=\"降.png\" width=30px>&nbsp<img src=\"散.png\" width=30px>&nbsp<img src=\"潤.png\" width=30px>&nbsp</td></tr></table></h3><br><br><br><br>● 石膏是中風傷寒的用藥，得麻、桂而助青龍(麻黃)之力; 得知母、甘草有白虎之號\n\
+\n\
+● 石膏色白且味甘辛，是為陽藥\n\
+\n\
+● 石膏與麻黃同用就不會大汗出而衰竭\n\
+\n\
+● 清六腑之熱: 石膏、滑石、寒水石\n\
+\n\
+● 知母滑腸，石膏補水分補太多會傷到腸胃，故用甘草及粳米來保護腸胃(見白虎湯)\n\
+\n\
+● 麻黃配桂枝則發汗，配石膏則行水，配射干則定喘\n\
+\n\
+● 【倪師】吃一錢甘遂，要吃十斤石膏還有人參，津液才補得回來。\n\
+\n\
+● 治氣分實熱和肺胃實火之要藥：石膏\n\
+\n\
+● 胃火牙痛：石膏\n\
+\n\
+<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 350px\"> <tr bgcolor=\"#ffffcc\" ><td>比較</td><td>同</td><td>異</td></tr> <tr><td bgcolor=\"#ccffcc\">黃耆</td><td  rowspan=\"2\">收汗</td><td>汗出而腫，不煩</td></tr> <tr><td bgcolor=\"#ccffcc\">石膏</td><td>汗出而渴，煩</td></tr> </table>\n\
+\n\
+<br>【相關藥對】:\n\
+\n\
+● 麻黃+石膏 : 治療邪熱壅肺的咳喘，全身水腫。\n\
+\n\
+● 石膏+知母 : 治療氣分實熱，心煩、身熱、喜冷飲。\n\
+\n\
+● 石膏+生地黃 : 治療陰虛熱擾，虛煩少寐。\n\
+\n\
+● 黃柏+石膏 : 治療湯火燙傷及濕疹。\n\
+\n\
+● 桔梗+石膏 : 治療咽喉痛，乾咳無痰或黃稠痰。\n\
+\n\
+● 石膏+金銀花+連翹 : 治療發熱，咽喉疼痛，舌質紅，苔薄白，脈浮數。\n\
+\n\
+● 桔梗+石膏+知母 : 治療發熱，口渴，咽喉痛，舌紅，脈洪大。\n\
+\n\
+● 石膏+魚腥草+黃芩 : 治療感冒肺炎、肺膿瘍。咳嗽，痰黃稠，黃鼻涕，舌紅苔黃，脈數。\n\
+\n\
+● 桔梗+石膏+薑半夏 : 治療咳嗽，不易咳出的濃痰，黏痰。\n\
+\n\
+● 石膏+柴胡+黃芩 : 治療感冒發高燒，反覆發燒。舌質紅，脈浮弦數。\n\
+\n\
+● 桔梗+石膏+天花粉+葛根 : 治療口乾、咽乾，舌質紅，脈數。\n\
+\n\
+● 薄荷+石膏 : 外感病，證屬風熱為患，以致惡寒輕，或惡風，發熱重，或晝涼暮熱，久久不退等症。\n\
+\n\
+● 羌活+石膏 : 1.流行性感冒，上呼吸道感染，證屬風寒閉遏肌表，裡有蘊熱者；2.暑溫、暑濕，證屬風寒外束，肌表受累，內有鬱熱者；3.乙型腦炎，邪在衛分，或衛氣同病者。\n\
+\n\
+● 石膏+細辛 : 1.內蘊鬱熱，隨經上竄，以致牙痛、牙齦腫痛、口舌生瘡等症；2.感受風熱，上竄清竅，以致頭痛諸症。\n\
+\n\
+● 淡竹葉+石膏 : 1.口舌生瘡，牙齦腫痛，證屬心胃熱盛者；2.溫熱病後期，餘邪未清，低熱不退，胸中煩悶，舌紅、少苔等症；3.糖尿病之煩熱咳逆、乾渴多飲等症。\n\
+\n\
+● 石膏 : 1、用於氣分實熱證\n\
+\n\
+● 炮附子+石膏 : 全身痛證兼有局部發熱。\n\
+\n\
+<button onclick=\"location.href='#showTxt_0'\" type=\"button\">註解</button><br><br> <a href=\"#home\">[top]</a>  <a name=\"知母\"></a>\n\
+=========================\n\
+知母\n\
+=========================\n\
+\n\
+<br><h3><table  border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px\"><tr><td align=\"center\" colspan=\"2\" bgcolor=\"#9feda3\">知母</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>性味</td><td>苦、甘，寒</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>歸經</td><td>肺胃腎</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>主治</td><td>清熱瀉火，滋陰潤燥</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>運用</td><td>1、用於氣分實熱證2、用於肺熱咳嗽，陰虛燥咳3、用於陰虛消渴4、用於骨蒸潮熱</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>藥性</td><td><img src=\"寒.png\" width=30px>&nbsp<img src=\"補.png\" width=30px>&nbsp<img src=\"降.png\" width=30px>&nbsp<img src=\"散.png\" width=30px>&nbsp<img src=\"潤.png\" width=30px>&nbsp</td></tr></table></h3><br><br><br><br>● 石膏是中風傷寒的用藥，得麻、桂而助青龍(麻黃)之力; 得知母、甘草有白虎之號\n\
+\n\
+● 知母、黃柏是苦寒藥，久服會傷脾胃，女性久服則絕孕\n\
+\n\
+● 知母清太陰之氣\n\
+\n\
+● 清涼為肺之母也，知母者，知肺之母以清涼也。\n\
+\n\
+● 知母滑腸，石膏補水分補太多會傷到腸胃，故用甘草及粳米來保護腸胃(見白虎湯)\n\
+\n\
+● 知母潤肺滋腎而降火\n\
+\n\
+● 退虛熱：知母 黃柏 牡丹皮 青蒿 白薇 地骨皮 銀柴胡 胡黃連 秦艽 龜甲 鱉甲\n\
+\n\
+● 潤腸通便：火麻仁 郁李仁 柏子仁 核桃仁 桃仁  決明子 榧子 蘇子 冬葵子 栝樓 當歸 何首烏 黑芝麻 桑葚 肉蓯蓉 胖大海 知母 生地黃 鎖陽 杏仁\n\
+\n\
+百合科植物: 蔥白+知母+重樓+土茯苓+蘆薈+薤白+川貝母+浙貝母+韭菜子+百合+麥冬+天冬+玉竹+黃精+大蒜\n\
+\n\
+<br>【相關藥對】:\n\
+\n\
+● 石膏+知母 : 治療氣分實熱，心煩、身熱、喜冷飲。\n\
+\n\
+● 知母+黃柏 : 治療陰虛潮熱，骨蒸盜汗。\n\
+\n\
+● 川貝母+知母 : 治療肺熱虛實咳嗽。\n\
+\n\
+● 桔梗+石膏+知母 : 治療發熱，口渴，咽喉痛，舌紅，脈洪大。\n\
+\n\
+● 知母+草果 : 1.表裡不和，乍寒乍熱，寒熱往來等症；2.瘧疾（包括瘴瘧）諸症。\n\
+\n\
+● 知母+黃柏+紫油肉桂 : 1.糖尿病，表現為“腎消”，也叫“下消”者，症見多尿，小便混濁、如膏如脂等，2.糖尿病兼見下身瘙癢者。\n\
+\n\
+● 百合+知母 : 1.陰虛或溫熱病後餘熱未清，以致頭昏、心煩不安、失眠，證屬心中熱鬱氣悅者；2.情志不遂，以致精神恍惚、不能自制等症；3.百合病。\n\
+\n\
+● 黃耆+知母 : 1.惡性腫瘤，術後、放療、化療之後，證屬氣陰兩虛，大氣下陷者；2.胃脘痛，證屬氣陰兩虛者；3.原發性血小板減少性紫癜；4.肺結核、腎結核，證屬陰虛內熱者；5.慢性腎炎血尿，證屬氣陰兩虛者。\n\
+\n\
+● 知母+黃柏+玄參 : 陰虛有火之證。症見發熱盜汗、口乾咽燥、消瘦、大便乾燥，舌質紅、脈細數。\n\
+\n\
+<button onclick=\"location.href='#showTxt_1'\" type=\"button\">註解</button><br><br> <a href=\"#home\">[top]</a>  <a name=\"蘆根\"></a>\n\
+=========================\n\
+蘆根\n\
+=========================\n\
+\n\
+<br><h3><table  border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px\"><tr><td align=\"center\" colspan=\"2\" bgcolor=\"#9feda3\">蘆根</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>性味</td><td>甘，寒</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>歸經</td><td>肺胃</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>主治</td><td>清熱生津，除煩止渴，利尿</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>運用</td><td>1、用於熱病煩渴2、用於肺熱嘔吐3、用於肺熱咳嗽，肺癰咳吐膿血4、用於熱淋澀痛</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>藥性</td><td><img src=\"寒.png\" width=30px>&nbsp<img src=\"瀉.png\" width=30px>&nbsp<img src=\"散.png\" width=30px>&nbsp</td></tr></table></h3><br><br><br><br>● 胃熱嘔吐：蘆根 竹茹 枇杷葉\n\
+\n\
+● 透疹：荊芥 薄荷 牛蒡子 蟬蛻 升麻 葛根  浮萍 蘆根 紫草\n\
+\n\
+禾本科植物: 蘆根+竹葉+淡竹葉+薏苡仁+玉米須+麥芽+稻芽+白茅根+竹茹+天竺黃+浮小麥+糯稻根須\n\
+\n\
+<br>【相關藥對】:\n\
+\n\
+● 天花粉+蘆根+生地黃+生何首烏+麥門冬 : 治療消渴證。心煩，口渴，胃口太好，消榖善飢，脈細數。\n\
+\n\
+● 金銀花+連翹+蘆根+大青葉+板藍根+黃芩 : 治療流行性乙型腦炎。\n\
+\n\
+● 白茅根+蘆根 : 1.感冒發燒，感冒之初，只用蘆根，二三日不解者，加入白茅根；2.溫病之發熱、煩渴、煩燥不安等症；3.肺熱咳喘（支氣管肺炎，大葉性肺炎，病毒性肺炎等病均宜使用）；4.麻疹初起，臟腑鬱熱，疹毒過盛，宜表散者，用之可透發疹毒；5.急性腎炎，尿路感染，表現有發熱、小便不利、水腫者亦可使用；6.止熱呃；7.流行性出血熱。\n\
+\n\
+● 天花粉+蘆根+生地黃+麥門冬 : 治消渴。\n\
+\n\
+<a href=\"#home\">[top]</a>  <a name=\"栝蔞根\"></a>\n\
+=========================\n\
+栝蔞根\n\
+=========================\n\
+\n\
+<br><h3><table  border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px\"><tr><td align=\"center\" colspan=\"2\" bgcolor=\"#9feda3\">天花粉-栝蔞根</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>性味</td><td>甘、微苦，微寒</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>歸經</td><td>肺胃</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>主治</td><td>清熱生津，消腫排膿</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>運用</td><td>1、用於熱病口渴，內熱消渴2、用於肺熱咳嗽或燥咳3、用於癰腫瘡瘍</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>藥性</td><td><img src=\"寒.png\" width=30px>&nbsp<img src=\"瀉.png\" width=30px>&nbsp<img src=\"收.png\" width=30px>&nbsp<img src=\"潤.png\" width=30px>&nbsp</td></tr></table></h3><br><br><br><br>● 桂枝湯證而有渴的時候就加栝蔞根，因腸胃的津液不夠而發炎<--栝蔞根能夠消炎\n\
+\n\
+● 栝蔞根生津，葛根升津。   葛根常配合栝蔞根等治療消渴\n\
+\n\
+● 葫蘆科植物多能解毒，如絲瓜、葫蘆、冬瓜、苦瓜、大黃瓜、小黃瓜、南瓜、栝蔞(栝蔞根、栝蔞實)等\n\
+\n\
+<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 450px\"><tr bgcolor=\"#ffffcc\" ><td>比較</td><td>同</td><td>異</td></tr><tr><td bgcolor=\"#ccffcc\">栝蔞根</td><td  rowspan=\"2\">生津止渴，降血糖</td><td>栝蔞的根莖</td></tr><tr><td bgcolor=\"#ccffcc\">天花粉</td><td>黃瓜的粉</td></tr></table></table>\n\
+\n\
+<br>【相關藥對】:\n\
+\n\
+<a href=\"#home\">[top]</a>  <a name=\"竹葉\"></a>\n\
+=========================\n\
+竹葉\n\
+=========================\n\
+\n\
+<br><h3><table  border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px\"><tr><td align=\"center\" colspan=\"2\" bgcolor=\"#9feda3\">竹葉</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>性味</td><td>甘、辛、淡，寒</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>歸經</td><td>心胃小腸</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>主治</td><td>清熱除煩，生津，利尿</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>運用</td><td>1、用於熱病煩渴2、用於口舌生瘡，尿赤澀痛</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>藥性</td><td><img src=\"寒.png\" width=30px>&nbsp<img src=\"瀉.png\" width=30px>&nbsp<img src=\"降.png\" width=30px>&nbsp<img src=\"散.png\" width=30px>&nbsp<img src=\"潤.png\" width=30px>&nbsp</td></tr></table></h3><br><br><br><br>● 清代張石頑認為:「竹葉兼行肌表，竹茹專清胃府，竹瀝善透經絡。」\n\
+\n\
+● 清心利尿： 連翹 木通 瞿麥 竹葉 淡竹葉\n\
+\n\
+禾本科植物: 蘆根+竹葉+淡竹葉+薏苡仁+玉米須+麥芽+稻芽+白茅根+竹茹+天竺黃+浮小麥+糯稻根須\n\
+\n\
+<!doctype html><html><head><meta charset=\"utf-8\"></head><body><table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 600px\"><caption>【黃疸的相關用藥】</caption><tr bgcolor=\"#ccffcc\"><td width=\"10%\" bgcolor=\"#fffaff\">-</td><td width=\"30%\">溫熱藥</td><td width=\"30%\">平藥</td><td width=\"30%\">寒涼藥</td></tr><tr><td bgcolor=\"#ccffff\">補藥</td><td >白朮☀ </td><td></td><td></td></tr><tr><td bgcolor=\"#ccffff\">平藥</td><td ></td><td>玉米須</td><td>滑石☀ ,大青葉,秦艽,大薊,小薊,白茅根</td></tr><tr><td bgcolor=\"#ccffff\">瀉藥</td><td ></td><td>赤小豆☀ </td><td>柴胡☀ ,淡竹葉☂ ,梔子☂ ,黃芩☀ ,黃柏☀ ,龍膽草☀ ,苦參☀ ,白鮮皮☀ ,蒲公英,大黃☀ ,茵陳蒿☀ ,金錢草☀ ,鬱金</td></tr></table> <br><table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 600px\"><tr bgcolor=\"#e6ccff\"><td width=\"10%\" bgcolor=\"#fffaff\">-</td><td width=\"30%\">升性藥</td><td width=\"30%\">平藥</td><td width=\"30%\">降性藥</td></tr><tr><td bgcolor=\"#ffffcc\">散性藥</td><td>柴胡☀ </td><td>金錢草☀ ,鬱金</td><td>淡竹葉☂ ,白鮮皮☀ ,蒲公英,滑石☀ ,茵陳蒿☀ ,赤小豆☀ </td></tr><tr><td bgcolor=\"#ffffcc\">平藥</td><td>苦參☀ </td><td>大青葉,秦艽,玉米須,大薊,小薊,白茅根</td><td></td></tr><tr><td bgcolor=\"#ffffcc\">收性藥</td><td></td><td>白朮☀ </td><td>梔子☂ ,黃芩☀ ,黃柏☀ ,龍膽草☀ ,大黃☀ </td></tr></table></body></html></body></html>\n\
+\n\
+<need> <table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 45%\"><need> <caption> 竹葉、竹茹、竹瀝的比較</caption><need> <tr bgcolor=\"#ccffcc\" align=\"center\" ><td width=\"15%\"><need>-</td><need> <td>同</td><need> <td>異</td><need> <td>部位</td><need> </tr><need> <tr><td width=\"15%\"  bgcolor=\"#ffffcc\"><need>竹葉</td><td rowspan=\"3\">來自禾本植物竹，<br>皆有清熱之功</td><need> <td>清熱瀉火，除煩止渴，利尿通淋</td><need> <td>禾本科植物淡竹葉的乾燥莖葉</td><need> </tr><need> <tr><td width=\"15%\"  bgcolor=\"#ffffcc\"><need>竹茹</td><need> <td>清熱化痰，除煩止嘔</td><need> <td>禾本科植物青稈竹、大頭典竹或淡竹的莖稈，取新鮮莖稈，除去外皮，將稍帶綠色的中間層刮成絲條，或削成薄片</td><need> </tr><need> <tr><td width=\"15%\"  bgcolor=\"#ffffcc\"><need>竹瀝</td><need> <td>咳嗽痰多，氣喘胸悶，中風舌強，痰涎壅盛</td><need> <td>禾本科植物粉綠竹、淨竹及同屬數種植物的鮮杆經加熱後自然瀝出的液體</td><need> </tr><need> </table><need> </table>\n\
+\n\
+<br>【相關藥對】:\n\
+\n\
+● 淡竹葉+木通 : 治療心經火熱證。心胸煩熱，口渴面赤，意欲飲冷，以及口舌生瘡；或心熱移於小腸，小便赤澀刺痛，舌紅，脈數。\n\
+\n\
+● 淡竹葉+荷梗 : 1.夏日中暑諸症；2.熱性病由衛分轉入氣分，症見煩熱、口渴、小便不利等；3.小兒發熱，小便短赤等症；4.心熱下移小腸，症見小便澀痛等；5.濕熱發黃諸症。\n\
+\n\
+● 淡竹葉+石膏 : 1.口舌生瘡，牙齦腫痛，證屬心胃熱盛者；2.溫熱病後期，餘邪未清，低熱不退，胸中煩悶，舌紅、少苔等症；3.糖尿病之煩熱咳逆、乾渴多飲等症。\n\
+\n\
+<button onclick=\"location.href='#showTxt_2'\" type=\"button\">註解</button><br><br> <a href=\"#home\">[top]</a>  <a name=\"梔子\"></a>\n\
+=========================\n\
+梔子\n\
+=========================\n\
+\n\
+<br><h3><table  border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px\"><tr><td align=\"center\" colspan=\"2\" bgcolor=\"#9feda3\">梔子</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>性味</td><td>苦，寒</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>歸經</td><td>心肝肺胃三焦</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>主治</td><td>瀉火除煩，清熱利濕，涼血解毒</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>運用</td><td>1、用於熱病煩悶2、用於濕熱黃疸3、用於血熱出血4、用於熱毒瘡瘍</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>藥性</td><td><img src=\"寒.png\" width=30px>&nbsp<img src=\"瀉.png\" width=30px>&nbsp<img src=\"降.png\" width=30px>&nbsp<img src=\"收.png\" width=30px>&nbsp<img src=\"潤.png\" width=30px>&nbsp</td></tr></table></h3><br><br><br><br>● 梔子之性能收善降，可止胃酸反逆\n\
+\n\
+● 梔子通瀉三焦火毒，使諸火毒下行從膀胱出\n\
+\n\
+● 梔子是治胸中懊憹的特效藥\n\
+\n\
+● 一般都說:黃芩瀉上焦火，黃連瀉中焦火，黃柏瀉下焦火 。而梔子通瀉三焦之火 (生大黃瀉上焦頭目的熱)\n\
+\n\
+● 五鬱之法: 香附開氣鬱，蒼朮除濕鬱，川芎行血鬱，梔子清火鬱，神麴消食鬱\n\
+\n\
+● 梔子是很好的消炎藥，因為是茜草科植物，也有利於活血化瘀。\n\
+\n\
+茜草科植物: 梔子+白花蛇舌草+雞矢籐+茜草+鉤籐+巴戟天\n\
+\n\
+<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 450px\"><tr bgcolor=\"#ffffcc\" ><td>比較</td><td>同</td><td>異</td></tr><tr><td bgcolor=\"#ccffcc\">梔子</td><td  rowspan=\"3\">除煩</td><td>煩悶而胸中窒</td></tr><tr><td bgcolor=\"#ccffcc\">黃連</td><td>煩悸而心下痞</td></tr><tr><td bgcolor=\"#ccffcc\">連翹</td><td>煩汗而咽中痛</td></tr></table></table>\n\
+\n\
+<!doctype html><html><head><meta charset=\"utf-8\"></head><body><table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 600px\"><caption>【黃疸的相關用藥】</caption><tr bgcolor=\"#ccffcc\"><td width=\"10%\" bgcolor=\"#fffaff\">-</td><td width=\"30%\">溫熱藥</td><td width=\"30%\">平藥</td><td width=\"30%\">寒涼藥</td></tr><tr><td bgcolor=\"#ccffff\">補藥</td><td >白朮☀ </td><td></td><td></td></tr><tr><td bgcolor=\"#ccffff\">平藥</td><td ></td><td>玉米須</td><td>滑石☀ ,大青葉,秦艽,大薊,小薊,白茅根</td></tr><tr><td bgcolor=\"#ccffff\">瀉藥</td><td ></td><td>赤小豆☀ </td><td>柴胡☀ ,淡竹葉☂ ,梔子☂ ,黃芩☀ ,黃柏☀ ,龍膽草☀ ,苦參☀ ,白鮮皮☀ ,蒲公英,大黃☀ ,茵陳蒿☀ ,金錢草☀ ,鬱金</td></tr></table> <br><table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 600px\"><tr bgcolor=\"#e6ccff\"><td width=\"10%\" bgcolor=\"#fffaff\">-</td><td width=\"30%\">升性藥</td><td width=\"30%\">平藥</td><td width=\"30%\">降性藥</td></tr><tr><td bgcolor=\"#ffffcc\">散性藥</td><td>柴胡☀ </td><td>金錢草☀ ,鬱金</td><td>淡竹葉☂ ,白鮮皮☀ ,蒲公英,滑石☀ ,茵陳蒿☀ ,赤小豆☀ </td></tr><tr><td bgcolor=\"#ffffcc\">平藥</td><td>苦參☀ </td><td>大青葉,秦艽,玉米須,大薊,小薊,白茅根</td><td></td></tr><tr><td bgcolor=\"#ffffcc\">收性藥</td><td></td><td>白朮☀ </td><td>梔子☂ ,黃芩☀ ,黃柏☀ ,龍膽草☀ ,大黃☀ </td></tr></table></body></html></body></html>\n\
+\n\
+<br>【相關藥對】:\n\
+\n\
+● 茵陳蒿+梔子 : 治療黃疸中的陽黃。\n\
+\n\
+● 梔子+淡豆豉 : 治療：1.外感風熱，或溫病初起諸症；\n\
+\n\
+● 黃柏+梔子+連翹+薏苡仁 : 治療濕熱證的皮膚病。紅疹，皮膚癢，皮膚發紅，皮膚發熱，皮膚痛，舌質紅苔黃膩，脈數。\n\
+\n\
+● 黃連+黃芩+黃柏+梔子 : 治療三焦火熱(火毒)證。大熱煩躁，口燥咽乾，錯語不眠；或熱病吐血、衄血；或熱甚發斑，或身熱下利，或濕熱黃疸；或外科癰瘍疔毒，小便黃赤，舌紅苔黃，脈數有力。\n\
+\n\
+● 連翹+梔子 : 治療瘡癰腫毒，瘰癧結核。\n\
+\n\
+● 連翹+梔子+黃柏 : 治療小便赤，腳濕氣(腳癬)，濕疹，女性盆腔炎，陰道炎。\n\
+\n\
+● 牡丹皮+梔子 : 治療肝鬱化火生熱。煩躁易怒，舌偏紅、苔薄黃，脈弦數。\n\
+\n\
+● 連翹+梔子+黃芩 : 治療瘡癰腫毒，瘰癧結核。\n\
+\n\
+● 酸棗仁+梔子 : 1.心火過盛，以致煩躁不寧、失眠、多夢等症；2.神經衰弱諸症。\n\
+\n\
+● 生半夏+梔子+炮附子 : 咽喉痞塞感，咽下困難，通過障礙者。\n\
+\n\
+● 梔子+黃連+甘草 : 用於胃和十二指腸潰瘍、胃酸過多、慢性胃炎等。主訴空腹或食後上腹部疼痛、心下不快、火燒心、大便潛血陽性者。不甚衰弱者為宜。\n\
+\n\
+<button onclick=\"location.href='#showTxt_3'\" type=\"button\">註解</button><br><br> <a href=\"#home\">[top]</a>  <a name=\"夏枯草\"></a>\n\
+=========================\n\
+夏枯草\n\
+=========================\n\
+\n\
+<br><h3><table  border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px\"><tr><td align=\"center\" colspan=\"2\" bgcolor=\"#9feda3\">夏枯草</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>性味</td><td>辛、苦，寒</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>歸經</td><td>肝膽</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>主治</td><td>清肝明目，消腫散結</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>運用</td><td>1、用於目赤腫痛、頭痛眩暈，目珠疼痛2、用於瘰癧癭瘤</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>藥性</td><td><img src=\"寒.png\" width=30px>&nbsp<img src=\"補.png\" width=30px>&nbsp<img src=\"降.png\" width=30px>&nbsp<img src=\"散.png\" width=30px>&nbsp<img src=\"燥.png\" width=30px>&nbsp</td></tr></table></h3><br><br><br><br>● 【倪師驗方】民間方使用單味夏枯草五錢，生雞蛋帶殼一只，用水二碗煮成一碗，將湯喝盡，去殼吃蛋，如果於健康時吃一劑，則終身不再犯扁桃腺炎。\n\
+\n\
+● 調整生理時鐘: 夏枯草、夜交藤\n\
+\n\
+● 【驗方】半夏和夏枯草各半同煎治失眠有奇效。半夏得陰而生，夏枯草得至陽而長，此陰陽配合，甚妙!\n\
+\n\
+● 降眼壓的單味藥:  夏枯草、半夏兩種(沖泡來喝)\n\
+\n\
+● 治肝陽眩暈,目珠夜痛(高眼壓)及瘰疬腫結之要藥：夏枯草\n\
+\n\
+● 降血壓：杜仲 夏枯草 決明子 青葙子 車前子 羅布麻 地龍 青木香 大薊 小薊 馬兜鈴 桑白皮 薺菜 臭梧桐 淫羊藿 山茱萸 稀薟草 山楂\n\
+\n\
+唇形科植物: 紫蘇+香薷+荊芥+薄荷+夏枯草+黃芩+藿香+丹參+益母草+澤蘭+紫蘇子\n\
+\n\
+<br>【相關藥對】:\n\
+\n\
+● 蒲公英+王不留行+鬱金+夏枯草 : 治療乳房囊性增生，乳房疼痛。\n\
+\n\
+● 白芨+百部+夏枯草 : 治療肺癆(肺結核)。\n\
+\n\
+● 生半夏+夏枯草 : 1.痰熱為患，遏阻中焦，以致胸悶、頭昏、頭痛、失眠等症；2.神經衰弱，症屬陰陽失調者。\n\
+\n\
+● 牡蠣+夏枯草 : 1.肝鬱化火，虛風上擾，症見頭暈，口苦心煩，夜寐多夢，耳鳴眼花等；2.高血壓病，證屬虛風上擾者。\n\
+\n\
+● 夏枯草+決明子 : 1.肝熱目疾諸症；2.肝腎不足，頭痛、眩暈、目暗不明等症；3.高脂血症。\n\
+\n\
+● 浙貝母+夏枯草 : 1.瘰癧（類似淋巴腺結核）諸症；2.甲狀腺腫大，甲狀腺功能亢進。\n\
+\n\
+<button onclick=\"location.href='#showTxt_4'\" type=\"button\">註解</button><br><br> <a href=\"#home\">[top]</a>  <a name=\"決明子\"></a>\n\
+=========================\n\
+決明子\n\
+=========================\n\
+\n\
+<br><h3><table  border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px\"><tr><td align=\"center\" colspan=\"2\" bgcolor=\"#9feda3\">決明子</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>性味</td><td>甘、苦、鹹，微寒</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>歸經</td><td>肝腎大腸</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>主治</td><td>清肝明目，潤腸通便</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>運用</td><td>1、用於目赤腫痛，目暗不明2、用於頭痛眩暈3、用於腸燥便秘</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>藥性</td><td><img src=\"寒.png\" width=30px>&nbsp<img src=\"瀉.png\" width=30px>&nbsp<img src=\"升.png\" width=30px>&nbsp<img src=\"散.png\" width=30px>&nbsp<img src=\"潤.png\" width=30px>&nbsp</td></tr></table></h3><br><br><br><br>● 中醫眼科常用藥: 枸杞、菊花、決明子、石決明、九孔、茺蔚子、青葙子、榖精子、密蒙花、櫫仁、車前子\n\
+\n\
+● 名似物殊: 草決明(青葙子)，和決明子，二者是完全不同物種。但都治眼疾。\n\
+\n\
+● 生的決明子富油質可以助排便而降血壓，炒決明子用在滋潤眼睛的乾澀。\n\
+\n\
+● 潤腸通便：火麻仁 郁李仁 柏子仁 核桃仁 桃仁  決明子 榧子 蘇子 冬葵子 栝樓 當歸 何首烏 黑芝麻 桑葚 肉蓯蓉 胖大海 知母 生地黃 鎖陽 杏仁\n\
+\n\
+● 降血壓：杜仲 夏枯草 決明子 青葙子 車前子 羅布麻 地龍 青木香 大薊 小薊 馬兜鈴 桑白皮 薺菜 臭梧桐 淫羊藿 山茱萸 稀薟草 山楂\n\
+\n\
+豆科植物: 葛根+淡豆豉+決明子+苦參+苦豆子+山豆根+綠豆+番瀉葉+海桐皮+雞骨草+刀豆+槐花+降香+雞血籐+蘇木+兒茶+皂莢+合歡皮+黃芪+白扁豆+甘草+補骨脂+沙苑子+胡蘆巴\n\
+\n\
+<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 80%\"><tr bgcolor=\"#ffffcc\" ><td width=\"15%\">比較</td><td>同</td><td>異</td><td>物種</td></tr><tr><td bgcolor=\"#ccffcc\">石決明</td><td  rowspan=\"3\">治眩暈、眼睛紅_眼睛充血_眼表出血、眼瞼發紅、眼瞼紅腫</td><td>治翳病、視線模糊</td><td>鮑魚的外殼</td></tr><tr><td bgcolor=\"#ccffcc\">決明子</td><td>治頭痛、眼睛痛、眼易流淚、畏光_羞明、便秘</td><td>馬蹄決明的種子</td></tr><tr><td bgcolor=\"#ccffcc\">草決明</td><td>治翳病、視線模糊</td><td>此即青葙子，萋蒿的種子</td></tr></table></table>\n\
+\n\
+<br>【相關藥對】:\n\
+\n\
+● 石決明+決明子 : 1.肝熱頭昏，視物不明，目赤澀痛，頭痛等症；2.高血壓、動脈硬化諸症。\n\
+\n\
+● 夏枯草+決明子 : 1.肝熱目疾諸症；2.肝腎不足，頭痛、眩暈、目暗不明等症；3.高脂血症。\n\
+\n\
+<button onclick=\"location.href='#showTxt_5'\" type=\"button\">註解</button><br><br> <br><br><a href=\"#home\">[top]</a> <a name=\"showTxt_0\"></a>  [herb]一四七、石膏：\n\
+<br>石膏【本經原文】味辛微寒，主中風寒熱，心下逆氣，驚喘口乾，舌焦不能息，腹中堅痛，除邪鬼，產乳金創。又名寒水石。\n\
+石膏【產地】產浙江江蘇山東，他省亦有出產。\n\
+石膏【性味】味甘辛，性徵寒，無毒。\n\
+石膏【主治】石膏為清涼解熱要藥，主治肺胃三焦氣分之熱，大渴熱狂，能解肌發汗，又能清熱止汗。\n\
+石膏【別錄】除時氣頭痛身熱，三焦大熱，皮膚熱，腸胃中結氣，解肌發汗，止消渴煩逆腹脹，暴氣喘咽熱，亦可作浴湯。\n\
+石膏【甄權】治傷寒頭痛如裂，壯熱皮如火燥，和蔥煎茶去頭痛。\n\
+石膏【大明】治天行熱狂頭風旋，下乳，揭齒益齒。\n\
+石膏【元素】止陽明經頭痛，發熱惡寒；日哺潮熱，大渴引飲，中暑潮熱，牙痛。\n\
+石膏【容川】得石之性多，味雖鹹而不甚，且此山之石即能生水，流而為泉，是故此石純具水性，稟天水之寒，故能清熱。\n\
+石膏【藥徵】主治煩渴，旁治譫語煩躁身熱。\n\
+石膏【用量】普通三錢至五錢，大劑二三兩。\n\
+石膏【禁忌】傷寒中風太陽症，少陽症之往來寒熱等均忌，真寒假熱之症或因裡虛引起之虛熱症亦忌，有金瘡下乳亦忌，胃家寒症者亦忌，惡巴豆畏鐵。\n\
+\n\
+<a href=\"#home\">[top]</a> <a name=\"showTxt_1\"></a>  [herb]一七一、知母：\n\
+<br>知母【本經原文】味苦，寒，無毒。治消渴，熱中，除邪氣，肢體浮腫。下水，補不足，益氣。一名蚔母。一名連母。一名野蓼。一名地參。一名水參。一名水浚。一名貨母。一名蝭母。\n\
+知母【產地】我國河內川谷瀕河，及解川滁川多產之，為多年生草根橫生，類萬年青。\n\
+知母【性味】味苦，性寒，無毒。\n\
+知母【主治】知母為清涼解熱要藥，功能瀉肺火，清胃火，下水消腫，利二便。\n\
+知母【別錄】療傷寒久瘧煩熱，脅下邪氣，膈中惡，及風汗內疽，多服令人洩。\n\
+知母【甄權】心煩燥悶，骨熱勞往來，產後蓐勞，腎氣勞，憎寒虛煩。\n\
+知母【大明】熱勞傳尸疰痛，通小腸，消痰止嗽，潤心肺，安心止驚悸。\n\
+知母【元素】涼心去熱，治陽明火熱，瀉膀胱腎經火熱，痰厥頭痛，下痢腰痛，喉中腥臭。\n\
+知母【好古】瀉火而上清肺金，滋水而下潤腎燥，治命門相火有餘。\n\
+知母【容川】知母葉至難死，拔之猶生，即知其得水氣多，故能清氣分之熱。\n\
+知母【用量】普通錢半至三錢。\n\
+知母【禁忌】能滑腸，洩瀉者忌，陽痿及易舉易痿，脾弱飲食不化，胃虛不思食，均忌，勿犯鐵器，得黃柏及酒良。\n\
+\n\
+<a href=\"#home\">[top]</a> <a name=\"showTxt_2\"></a>  [herb]二○六、竹葉：\n\
+<br>竹葉【本經原文】味辛，平，無毒。治欬逆上氣，溢筋急，惡瘍，殺小蟲。根，作湯，益氣，止渴，補虛，下氣。汁，治風痙。實，通神明，輕身，益氣。\n\
+竹葉【產地】為暖地山中之常綠苞木。\n\
+竹葉【性味】味辛平，性寒。\n\
+竹葉【主治】竹葉為解熱，袪痰，止渴，鎮靜藥，治消渴，熱狂煩悶及小兒驚癇。\n\
+竹葉【別錄】治胸中痰熱，欬逆上氣。\n\
+竹葉【甄權】治吐血，熱毒風，止消渴，壓丹石毒。\n\
+竹葉【大明】消痰，治狂熱煩悶，中風失音不語，壯熱，頭風，頭痛，止驚悸，溫痔煩悶，妊婦頭旋倒地，小兒驚癇天吊。\n\
+竹葉【容川】因葉在四旁，則主四散，故能清肌中之熱。竹茹象人之筋脈，則清脈絡之熱以和血，稟天水之寒氣，故治一切熱。\n\
+竹葉【用量】五錢至一兩。\n\
+竹葉【禁忌】寒症忌用。\n\
+\n\
+<a href=\"#home\">[top]</a> <a name=\"showTxt_3\"></a>  [herb]二○八、梔子：\n\
+<br>梔子【本經原文】味苦，寒，無毒。治五內邪氣，胃中熱氣，面赤，酒皰鼻，白癩，赤癩，瘡瘍。生川谷。一名木丹。\n\
+梔子【產地】處處有之，我國南方及四川尤多產，實又名巵子，蓋象巵形也。\n\
+梔子【性味】味苦，性寒，無毒。\n\
+梔子【主治】梔子為瀉火要藥，主五內邪氣時熱，心煩懊，瀉三焦火，清胃脘血，治五種黃病，通小便，解消渴。\n\
+梔子【別錄】療目赤熱瘡，胸心大小腸大熱，心中煩悶。\n\
+梔子【甄權】去熱毒風，除時疾熱，解五種黃病，利五淋，通小便，解消渴，明目，主中惡，殺蟅蟲毒。\n\
+梔子【元素】治心煩懊不得眠，臍下血滯而小便不利。\n\
+梔子【丹溪】瀉三焦火，清胃脘血，治熱厥心痛 解熱鬱，行結氣。\n\
+梔子【容川】梔子味苦象心包，故能瀉心包之火。性苦寒，有皮膈，象心包，內之子赤，正屬心之色，其花色白，當屬肺金，結子成赤，當屬心火，是為從肺入心，正治心中煩熱之藥，心為君主之官，肺為相傅之官，以制節心火之太過，梔子花白子赤，正是以肺金而歸制心火也，故仲景治心中懊，必用梔平豆鼓湯。\n\
+梔子【藥徵】主治心煩也，旁治發黃。\n\
+梔子【靈胎】清胃熱，瀉肺火。\n\
+梔子【用量】普通一錢至三錢。\n\
+梔子【禁忌】凡脾胃虛弱，血虛發熱，心肺無邪熱，小便閉由膀胱氣虛，均忌。\n\
+\n\
+<a href=\"#home\">[top]</a> <a name=\"showTxt_4\"></a>  [herb]三一一、夏枯草：\n\
+<br>夏枯草【本經原文】味苦，辛，寒，無毒。治寒熱瘰，鼠瘻，頭瘡，破癥，散癭結氣，腳腫，濕痺，輕身。生川谷。一名夕句，一名乃東。\n\
+夏枯草【產地】生原野，處處有之，四川為良，冬至後生，夏至而枯，\n\
+夏枯草【性味】味苦辛，性微寒，無毒。\n\
+夏枯草【主治】夏枯草為瘰癧要藥，主養陰血，散結毒，治目珠疼夜甚，陰腫赤白帶下；消暑清溼。\n\
+夏枯草【靈胎】瀉濕熱，散結氣。\n\
+夏枯草【用量】普通一錢至三錢。\n\
+夏枯草【禁忌】不詳。\n\
+夏枯草【容川】此以時為治之藥，夏枯草生於冬未，長於三春，正得水木之氣，遇夏則枯，因木當火令，其氣退謝，故可用以退肝膽經之火。\n\
+夏枯草【倪註】民間方使用單味夏枯草五錢，生雞蛋帶殼一只，用水二碗煮成一碗，將湯喝盡，去殼吃蛋，如果於健康時吃一劑，則終身不再犯扁桃腺炎。\n\
+\n\
+<a href=\"#home\">[top]</a> <a name=\"showTxt_5\"></a>  [herb]六十七、決明子：\n\
+<br>決明子【本經原文】味鹹平，主青肓目淫，膚赤白膜，眼赤痛淚出，久服益精光。\n\
+決明子【產地】山野自生之草本植物，產陝西山西一帶，今處處可移植，與草決明為截然二種。\n\
+決明子【性味】味甘苦鹹，性平。\n\
+決明子【主治】決明子為瀉肝明目要藥，能補肝虛瀉肝經風熱，主頭風頭痛，治一切眼病。\n\
+決明子【別錄】療唇口青。\n\
+決明子【甄權】治肝熱，風淚赤眼，每旦取一匙洗淨，空心吞之，百日後夜見物光。\n\
+決明子【日華】助肝氣益精，以水調未塗腫毒，治太陽穴頭痛，又貼胸心止鼻洪，作枕頭治頭風明目。\n\
+決明子【靈胎】明目益精。\n\
+決明子【用量】普通一錢至三錢。\n\
+決明子【備註】惡麻仁。療目疾外，其他用者鮮，惟外治可以療蛇傷蟲刺。\n\
+\n\
+</pre></body></html>\n\
+</body></html>\n\
+")

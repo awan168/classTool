@@ -1,0 +1,178 @@
+document.write(" \n\<!doctype html>\n\
+<html>\n\
+<head>\n\
+<a name=\"home\"></a> <center><span style=\"color: rgb(0, 0, 0); font-weight: bold; font-size:25px; font-family:標楷體; line-height:1.6\">止血藥_涼血止血藥</span><br><meta charset=\"utf-8\"></head><body>\n\
+<button onclick=\"location.href='#地榆'\" type=\"button\">地榆</button><button onclick=\"location.href='#槐花'\" type=\"button\">槐花</button><button onclick=\"location.href='#側柏葉'\" type=\"button\">側柏葉</button><button onclick=\"location.href='#白茅根'\" type=\"button\">白茅根</button><button onclick=\"location.href='#蠶蛻'\" type=\"button\">蠶蛻</button><br><br><br></center><center><table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 45%\">\n\
+<caption><b>【藥性寒熱補瀉分佈表】</b></caption><tr bgcolor=\"#ccffcc\"><td width=\"10%\" bgcolor=\"#fffaff\">-</td><td width=\"30%\">溫熱藥</td><td width=\"30%\">平藥</td><td width=\"30%\">寒涼藥</td></tr><tr><td bgcolor=\"#ccffff\">補藥</td><td ></td><td></td><td></td></tr><tr><td bgcolor=\"#ccffff\">平藥</td><td ></td><td>蠶蛻</td><td>白茅根</td></tr><tr><td bgcolor=\"#ccffff\">瀉藥</td><td ></td><td></td><td>地榆,槐花☂ ,側柏葉☀ </td></tr></table></center> <br><center><table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 45%\">\n\
+<caption><b>【藥性升降收散動力分佈表】</b></caption><tr bgcolor=\"#e6ccff\"><td width=\"10%\" bgcolor=\"#fffaff\">-</td><td width=\"30%\">升性藥</td><td width=\"30%\">平藥</td><td width=\"30%\">降性藥</td></tr><tr><td bgcolor=\"#ffffcc\">散性藥</td><td></td><td>側柏葉☀ </td><td></td></tr><tr><td bgcolor=\"#ffffcc\">平藥</td><td></td><td>白茅根,蠶蛻</td><td></td></tr><tr><td bgcolor=\"#ffffcc\">收性藥</td><td></td><td>地榆</td><td>槐花☂ </td></tr></table></center> <br><center><table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 45%\"  class=\"center\">\n\
+<caption><b>【藥性燥濕分佈表】</b></caption><tr><td  bgcolor=\"#d7f8fa\" width=\"35%\">濕性藥</td><td bgcolor=\"#edf291\"width=\"30%\">中性藥</td><td bgcolor=\"#f5b59a\"width=\"35%\">燥性藥</td></tr><tr><td>槐花</td><td>地榆,白茅根,蠶蛻</td><td>側柏葉</td></tr></table></center>\n\
+<hr><a name=\"cpTable\"></a><a href=\"#home\">[top]</a><need> <center><table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 45%\">\n\
+<need> <caption> 止血藥_涼血止血藥的比較</caption>\n\
+<need> <tr bgcolor=\"#ccffcc\" align=\"center\" ><td width=\"15%\">\n\
+<need>-\n\
+</td>\n\
+<need> <td>同\n\
+</td>\n\
+<need> <td>異\n\
+</td>\n\
+<need> </tr>\n\
+<need> <tr><td width=\"15%\"  bgcolor=\"#ffffcc\">\n\
+<need>地榆\n\
+</td><td rowspan=\"5\"> 血熱妄行而出血</td><need> <td>解毒斂瘡、水火燙傷，濕疹，皮膚潰爛、痔瘡便血\n\
+</td>\n\
+<need> </tr>\n\
+<need> <tr><td width=\"15%\"  bgcolor=\"#ffffcc\">\n\
+<need>槐花\n\
+</td>\n\
+<need> <td>肝火上炎之目赤頭痛、痔瘡便血\n\
+</td>\n\
+<need> </tr>\n\
+<need> <tr><td width=\"15%\"  bgcolor=\"#ffffcc\">\n\
+<need>側柏葉\n\
+</td>\n\
+<need> <td>祛痰止咳、掉髮\n\
+</td>\n\
+<need> </tr>\n\
+<need> <tr><td width=\"15%\"  bgcolor=\"#ffffcc\">\n\
+<need>白茅根\n\
+</td>\n\
+<need> <td>熱淋，水腫，小便不利及濕熱黃疸\n\
+</td>\n\
+<need> </tr>\n\
+<need> <tr><td width=\"15%\"  bgcolor=\"#ffffcc\">\n\
+<need>蠶蛻\n\
+</td>\n\
+<need> <td>各種皮膚病、崩漏、带下、痢疾、便血吐血衄血、牙疳、口疮、目翳\n\
+</td>\n\
+<need> </tr>\n\
+<need> </table></center><br><br><pre style=\"color: rgb(0, 0, 0); word-wrap: break-word; white-space: pre-wrap;\"><a href=\"#home\">[top]</a>  <a name=\"地榆\"></a>\n\
+=========================\n\
+地榆\n\
+=========================\n\
+\n\
+<br><h3><table  border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px\"><tr><td align=\"center\" colspan=\"2\" bgcolor=\"#9feda3\">地榆</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>性味</td><td>苦、酸，微寒</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>歸經</td><td>肝胃大腸</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>主治</td><td>涼血止血，解毒斂瘡</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>運用</td><td>1、用於各種血熱出血證2、用於癰疽腫毒  3、用於水火燙傷，濕疹，皮膚潰爛</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>藥性</td><td><img src=\"寒.png\" width=30px>&nbsp<img src=\"瀉.png\" width=30px>&nbsp<img src=\"收.png\" width=30px>&nbsp</td></tr></table></h3><br><br><br><br>● 地榆這味藥能清能潤也能止，不一定要炒黑。\n\
+\n\
+● 治水火燙傷之要藥：地榆\n\
+\n\
+● 燙燒傷：四季青 紫珠 地榆 虎杖 側柏葉\n\
+\n\
+薔薇科植物: 委陵菜+翻白草+郁李仁+木瓜+石楠葉+玫瑰花+綠萼梅+山楂+鶴草芽+地榆+仙鶴草+桃仁+月季花+苦杏仁+枇杷葉+烏梅 +覆盆子+金櫻子\n\
+\n\
+<br>【相關藥對】:\n\
+\n\
+● 地榆炭+生地黃+黃連+槐花+側柏葉 : 治療各種熱性出血證，如吐血、咯血、衄血、便血、崩漏及血痢等。\n\
+\n\
+● 黃明膠+艾葉+地榆+側柏葉 : 治療便血，胃、十二指腸潰瘍，消化性潰瘍，潰瘍性結腸炎，功能失調性子宮出血。\n\
+\n\
+● 地榆+槐花 : 治療痔瘡便血。\n\
+\n\
+● 地榆+白芨+三七 : 治療胃、十二指腸潰瘍。\n\
+\n\
+<button onclick=\"location.href='#showTxt_0'\" type=\"button\">註解</button><br><br> <button onclick=\"location.href='#showTxt_1'\" type=\"button\">註解</button><br><br> <a href=\"#home\">[top]</a>  <a name=\"槐花\"></a>\n\
+=========================\n\
+槐花\n\
+=========================\n\
+\n\
+<br><h3><table  border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px\"><tr><td align=\"center\" colspan=\"2\" bgcolor=\"#9feda3\">槐花</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>性味</td><td>苦，微寒</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>歸經</td><td>肝大腸</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>主治</td><td>涼血止血，清肝明目</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>運用</td><td>1、用於血熱出血證2、用於肝火上炎之目赤頭痛</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>藥性</td><td><img src=\"寒.png\" width=30px>&nbsp<img src=\"瀉.png\" width=30px>&nbsp<img src=\"降.png\" width=30px>&nbsp<img src=\"收.png\" width=30px>&nbsp<img src=\"潤.png\" width=30px>&nbsp</td></tr></table></h3><br><br><br><br>豆科植物: 葛根+淡豆豉+決明子+苦參+苦豆子+山豆根+綠豆+番瀉葉+海桐皮+雞骨草+刀豆+槐花+降香+雞血籐+蘇木+兒茶+皂莢+合歡皮+黃芪+白扁豆+甘草+補骨脂+沙苑子+胡蘆巴\n\
+\n\
+<br>【相關藥對】:\n\
+\n\
+● 地榆炭+生地黃+黃連+槐花+側柏葉 : 治療各種熱性出血證，如吐血、咯血、衄血、便血、崩漏及血痢等。\n\
+\n\
+● 地榆+槐花 : 治療痔瘡便血。\n\
+\n\
+● 槐花+黃芩 : 1.實性高血壓病，動脈硬化，表現為肝陽上亢、頭昏目眩、頭脹頭痛、面紅耳赤、口苦咽乾、心煩不寧、大便乾燥、小便黃赤等症者；婦人崩漏下血不止，證屬血熱為患者。\n\
+\n\
+<a href=\"#home\">[top]</a>  <a name=\"側柏葉\"></a>\n\
+=========================\n\
+側柏葉\n\
+=========================\n\
+\n\
+<br><h3><table  border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px\"><tr><td align=\"center\" colspan=\"2\" bgcolor=\"#9feda3\">側柏葉</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>性味</td><td>苦、澀，微寒</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>歸經</td><td>肺肝大腸</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>主治</td><td>涼血止血，祛痰止咳</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>運用</td><td>1、用於各種出血證2、用於咳嗽痰多證  3、外敷可治丹毒、痄腮等</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>藥性</td><td><img src=\"寒.png\" width=30px>&nbsp<img src=\"瀉.png\" width=30px>&nbsp<img src=\"散.png\" width=30px>&nbsp<img src=\"燥.png\" width=30px>&nbsp</td></tr></table></h3><br><br><br><br>● 清五志之火:  生地負責心腎的火，側柏葉負責肺火，艾葉負責脾胃的火，荷葉負責肝火\n\
+\n\
+● 脫髮:  側柏葉（外用）\n\
+\n\
+● 燙燒傷：四季青 紫珠 地榆 虎杖 側柏葉\n\
+\n\
+● 脫髮：側柏葉\n\
+\n\
+柏科植物: 側柏葉+柏子仁\n\
+\n\
+<br>【相關藥對】:\n\
+\n\
+● 地榆炭+生地黃+黃連+槐花+側柏葉 : 治療各種熱性出血證，如吐血、咯血、衄血、便血、崩漏及血痢等。\n\
+\n\
+● 黃明膠+艾葉+地榆+側柏葉 : 治療便血，胃、十二指腸潰瘍，消化性潰瘍，潰瘍性結腸炎，功能失調性子宮出血。\n\
+\n\
+● 黃明膠+三七+側柏葉 : 治療體內外各種出血證。\n\
+\n\
+<button onclick=\"location.href='#showTxt_2'\" type=\"button\">註解</button><br><br> <a href=\"#home\">[top]</a>  <a name=\"白茅根\"></a>\n\
+=========================\n\
+白茅根\n\
+=========================\n\
+\n\
+<br><h3><table  border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px\"><tr><td align=\"center\" colspan=\"2\" bgcolor=\"#9feda3\">白茅根</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>性味</td><td>甘，寒</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>歸經</td><td>肺胃大腸</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>主治</td><td>涼血止血，清熱利尿</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>運用</td><td>1、用於血熱出血證  2、用於熱淋，水腫，小便不利及濕熱黃疸</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>藥性</td><td><img src=\"寒.png\" width=30px>&nbsp</td></tr></table></h3><br><br><br><br>● 下肢水腫: 懷牛膝、車前子、丹參、薏仁、金錢草、白茅根\n\
+\n\
+● 白茅根、茵陳蒿等協同萆薢幫助腎臟分清別濁\n\
+\n\
+● 保護血管、強化微血管、治療熱迫血妄行: 白茅根、藕節、連翹\n\
+\n\
+● 白血球過高可用: 白茅根、冬瓜子\n\
+\n\
+● 大量用參附，稍停藥則四肢冰冷，徐靈胎用白茅根把鬱遏的陽氣升提到表面與四肢。讓經氣流注順暢。同時大補陰液，也使得病人陰陽得以平衡。則四肢體表常熱\n\
+\n\
+● 冬瓜子、白茅根可避免不必要之洗腎\n\
+\n\
+● 尿素氮BUN、肌酸酐Cr過高:  腎病主方加冬瓜子、白茅根就可改善。\n\
+\n\
+禾本科植物: 蘆根+竹葉+淡竹葉+薏苡仁+玉米須+麥芽+稻芽+白茅根+竹茹+天竺黃+浮小麥+糯稻根須\n\
+\n\
+<!doctype html><html><head><meta charset=\"utf-8\"></head><body><table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 600px\"><caption>【黃疸的相關用藥】</caption><tr bgcolor=\"#ccffcc\"><td width=\"10%\" bgcolor=\"#fffaff\">-</td><td width=\"30%\">溫熱藥</td><td width=\"30%\">平藥</td><td width=\"30%\">寒涼藥</td></tr><tr><td bgcolor=\"#ccffff\">補藥</td><td >白朮☀ </td><td></td><td></td></tr><tr><td bgcolor=\"#ccffff\">平藥</td><td ></td><td>玉米須</td><td>滑石☀ ,大青葉,秦艽,大薊,小薊,白茅根</td></tr><tr><td bgcolor=\"#ccffff\">瀉藥</td><td ></td><td>赤小豆☀ </td><td>柴胡☀ ,淡竹葉☂ ,梔子☂ ,黃芩☀ ,黃柏☀ ,龍膽草☀ ,苦參☀ ,白鮮皮☀ ,蒲公英,大黃☀ ,茵陳蒿☀ ,金錢草☀ ,鬱金</td></tr></table> <br><table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 600px\"><tr bgcolor=\"#e6ccff\"><td width=\"10%\" bgcolor=\"#fffaff\">-</td><td width=\"30%\">升性藥</td><td width=\"30%\">平藥</td><td width=\"30%\">降性藥</td></tr><tr><td bgcolor=\"#ffffcc\">散性藥</td><td>柴胡☀ </td><td>金錢草☀ ,鬱金</td><td>淡竹葉☂ ,白鮮皮☀ ,蒲公英,滑石☀ ,茵陳蒿☀ ,赤小豆☀ </td></tr><tr><td bgcolor=\"#ffffcc\">平藥</td><td>苦參☀ </td><td>大青葉,秦艽,玉米須,大薊,小薊,白茅根</td><td></td></tr><tr><td bgcolor=\"#ffffcc\">收性藥</td><td></td><td>白朮☀ </td><td>梔子☂ ,黃芩☀ ,黃柏☀ ,龍膽草☀ ,大黃☀ </td></tr></table></body></html></body></html>\n\
+\n\
+<br>【相關藥對】:\n\
+\n\
+● 白茅根+蘆根 : 1.感冒發燒，感冒之初，只用蘆根，二三日不解者，加入白茅根；2.溫病之發熱、煩渴、煩燥不安等症；3.肺熱咳喘（支氣管肺炎，大葉性肺炎，病毒性肺炎等病均宜使用）；4.麻疹初起，臟腑鬱熱，疹毒過盛，宜表散者，用之可透發疹毒；5.急性腎炎，尿路感染，表現有發熱、小便不利、水腫者亦可使用；6.止熱呃；7.流行性出血熱。\n\
+\n\
+● 生地黃+白茅根 : 熱性病熱邪入營，所致的發熱，口渴、舌絳，或身現斑疹等症；血熱妄行，症見蛆血、吐血、脈細數者；熱性病傷陰，低燒不退者；手術後發燒，以及原因不明之低燒。\n\
+\n\
+● 白茅根+益母草 : 1.急性腎炎，症見血尿、水腫等；2.慢性腎炎、腎功能不全；3.急性膀胱炎之血尿、小便不利等症。\n\
+\n\
+<a href=\"#home\">[top]</a>  <a name=\"蠶蛻\"></a>\n\
+=========================\n\
+蠶蛻\n\
+=========================\n\
+\n\
+<br><h3><table  border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px\"><tr><td align=\"center\" colspan=\"2\" bgcolor=\"#9feda3\">蠶蛻</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>性味</td><td>甘，平</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>歸經</td><td>心肝</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>主治</td><td>祛风止血，退翳明目</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>運用</td><td>1、用于崩漏2、用于带下3、用于痢疾4、用于肠风便血5、用于吐血衄血6、用于牙疳7、用于口疮8、用于喉风9、用于目翳</td></tr><tr><td bgcolor=\"#b2c8ed\" width=10%>藥性</td><td><img src=\"寒.png\" width=30px>&nbsp<img src=\"熱.png\" width=30px>&nbsp</td></tr></table></h3><br><br><br><br>● 蠶蛻含很高的抗組織胺，破傷風、皮膚病可以用到蠶蛻\n\
+\n\
+<br>【相關藥對】:\n\
+\n\
+<br><br><a href=\"#home\">[top]</a> <a name=\"showTxt_0\"></a>  [herb]一九一、地榆：\n\
+<br>\n\
+<a href=\"#home\">[top]</a> <a name=\"showTxt_1\"></a>  [herb]一九一、地榆：\n\
+<br>\n\
+[herb]地榆【本經原文】味苦，微寒，無毒。治婦人乳痙痛、七傷、帶下十二病，止痛，除惡肉，止汗氣，消酒，明目，治金瘡。生山谷。\n\
+<br>地榆【產地】生山間向陽之地，今處處平原川澤亦有之，根直而柔，入藥。\n\
+地榆【性味】味苦【或作苦甘酸】，性微寒，無毒。\n\
+地榆【主治】地榆為止血收斂要藥，功能止吐血下血久痢，婦人崩帶。\n\
+地榆【別錄】止膿血諸瘻惡瘡熱瘡，補絕傷，產後內塞，可作金瘡膏，消酒除渴，明目。\n\
+地榆【開寶】止冷熱痢，疳痢極效。\n\
+地榆【大明】止吐血鼻衄，傷風，月經不止，血崩，產前後諸血疾，并水瀉。\n\
+地榆【容川】地榆首之氣味厚，故行血更有力，尾之藥味薄，故行血之力輕。\n\
+地榆【用量】普通二錢至三至四錢。\n\
+地榆【禁忌】性寒下行，脾胃虛寒作泄，白痢久而胃弱，胎產虛寒泄瀉，血崩脾虛作泄，均忌，惡麥冬，丹砂，硫黃，雄黃，\n\
+\n\
+<a href=\"#home\">[top]</a> <a name=\"showTxt_2\"></a>  [herb]九、柏葉：（側柏葉）\n\
+<br>柏葉【產地】處處有之，山野最宜種植，樹高大可作木材，葉側生者入藥，名側柏葉，\n\
+柏葉【性味】味苦濇，性微寒，無毒。\n\
+柏葉【主治】側柏藥為滋陰涼血要藥，主吐血經血尿血便血，治冷鞥濕痺，傅湯火傷，生肌殺蟲。\n\
+柏葉【別錄】主吐血，經血，痢血，崩中赤白，益氣，令人耐寒暑，去濕痺生肌。\n\
+柏葉【甄權】治泠風歷節疼痛，止尿血。\n\
+柏葉【大明】炙署凍瘡，燒取汁塗頭，黑潤鬢髮。\n\
+柏葉【蘇頌】傅湯火傷，止痛滅瘢，服之療蠱痢，作湯常服殺五臟蟲，益人。\n\
+柏葉【用量】普通一錢至三錢。\n\
+柏葉【禁忌】畏菊花諸石，忌麵，得酒良，焙乾用。\n\
+柏葉【備註】側柏子殼－和雞子清調服，解砒霜毒。側柏子枝節－治風痹，歷節風，療蟲疥，側柏油－外用治諸癬癰毒，遊丹禿瘡，頭面耳部黃水瘡，殺蟲蝨。側柏根皮－主涼血，生毛髮，治火灼爛瘡。\n\
+\n\
+</pre></body></html>\n\
+</body></html>\n\
+")
