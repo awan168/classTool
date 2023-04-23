@@ -1,0 +1,13 @@
+aa () {
+echo ---------- $1
+cp -p top_books.html top_b$1.html
+}
+
+aa 0
+aa a
+aa b
+aa 1
+aa 2
+aa 3
+aa 4
+aa 5
