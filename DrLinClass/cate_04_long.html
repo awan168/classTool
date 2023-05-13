@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .picture-container {
+      width: 60%;
+      height: auto;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .thumbnail-container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .thumbnail {
+      width: 80px;
+      height: auto;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    .thumbnail:hover {
+      border: 2px solid blue;
+    }
+  </style>
+</head>
+<body> <script src="header.js"></script>
+  <br>
+  <div class="picture-container">
+    <img id="image-viewer" src="月經後期_01.png" alt="Viewer" />
+  </div>
+
+  <div class="thumbnail-container">
+    <img class="thumbnail" src="月經後期_01.png" alt="Image 1" onclick="document.getElementById('image-viewer').src='月經後期_01.png'" />
+    <img class="thumbnail" src="月經後期_02.png" alt="Image 2" onclick="document.getElementById('image-viewer').src='月經後期_02.png'" />
+    <img class="thumbnail" src="月經後期_03.png" alt="Image 3" onclick="document.getElementById('image-viewer').src='月經後期_03.png'" />
+    <img class="thumbnail" src="月經後期_04.png" alt="Image 3" onclick="document.getElementById('image-viewer').src='月經後期_04.png'" />    
+  </div>
+
+  <script>
+    // JavaScript code can be placed inline here
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+

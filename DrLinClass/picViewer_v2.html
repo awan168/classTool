@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Picture Viewer</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #picture-viewer {
+      position: relative;
+    }
+
+    #prev-button,
+    #next-button {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 32px;
+      background: red;
+      border: none;
+      color: white;
+    }
+
+    #prev-button {
+      left: 10%;
+    }
+
+    #next-button {
+      right: 10%;
+    }
+  </style>
+</head>
+<body>
+  <button id="prev-button" onclick="prevPicture()">&lt;</button>
+  <button id="next-button" onclick="nextPicture()">&gt;</button>
+
+  <div id="picture-viewer">
+    <img id="current-picture" src="月經後期_01.png" alt="Picture">
+  </div>
+
+  <script>
+    var pictures = ["月經後期_01.png", "月經後期_02.png", "月經後期_03.png","月經後期_04.png"];
+    var currentIndex = 0;
+
+    function showPicture(index) {
+      var imgElement = document.getElementById("current-picture");
+      imgElement.src = pictures[index];
+    }
+
+    function prevPicture() {
+      currentIndex--;
+      if (currentIndex < 0) {
+        currentIndex = pictures.length - 1;
+      }
+      showPicture(currentIndex);
+    }
+
+    function nextPicture() {
+      currentIndex++;
+      if (currentIndex >= pictures.length) {
+        currentIndex = 0;
+      }
+      showPicture(currentIndex);
+    }
+  </script>
+</body>
+</html>
+
+
+
