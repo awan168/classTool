@@ -1,0 +1,513 @@
+<!doctype html> 
+<html> 
+<head> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>上善堂脈診圖產生程式</title> 
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> 
+  <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css"> 
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script> 
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+
+  <script src="note_Data.js"></script>
+
+  <script type="text/javascript">
+  // Popup window code
+  function newPopup(url) {
+  popupWindow = window.open(
+  url,'popUpWindow','height=800,width=800,left=60,top=60,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+  }
+  </script>
+
+  <script>
+  allText_other = "";    
+  var allText_tab1 = "";
+  var cate_00 = "基礎問診:";
+  var cate_01 = "心:";
+  var cate_02 = "脾:";
+  var cate_03 = "肺:";
+  var cate_04 = "腎:";
+  var cate_05 = "肝:";
+  var cate_06 = "婦科:";
+  var cate_07 = "神志:";
+  var cate_08 = "傷科:";
+  var cate_09 = "皮膚:";
+  var cate_10 = "五官:";
+  var cate_11 = "其它:";
+  var cate_12 = "脈:";
+  var cate_13 = "舌:";
+  var cate_14 = "腹診:";
+  var cate_15 = "壓痛點:";
+  var cate_16 = "寒熱判斷:";
+  var cate_17 = "總論:";
+
+  var dbAllText = "";
+
+  var allText_r = "";
+  var allText_l = "";
+  var allText_r_2 = "";
+  var allText_l_2 = "";
+
+  var allFormulaText = "";
+  var allFormulaTempText = "";
+
+  var acupAllText = "";
+
+  var allAcupTempText = "";
+
+  var tempStrNow = "";
+
+
+
+  var allNoteText = "";
+
+
+
+
+
+
+  $( function() { 
+    $( "#tabs" ).tabs(); 
+  } ); 
+  </script> 
+
+
+
+
+<style>
+p.fixedHeight {
+    height:50px;
+}
+.FixedHeightContainer
+{
+  float:right;
+  height: 250px;
+  width:250px; 
+  padding:3px; 
+    background:#f00;
+}
+.Content
+{
+  height:224px;
+   overflow:auto;
+    background:#fff;
+}
+</style>
+
+</head> 
+<body> <center><img src="pulse_title.png" alt="xxx" width="55%" height="auto" style="border:0px solid black;"></center>
+ <center><span style="color: rgb(0, 0, 0); font-weight: bold; font-size:45px; font-family:標楷體; line-height:1.6"></span></center>    
+<center><table border="1" cellpadding="1" cellspacing="1" style="width: 50%"  style="float: left"> 
+<tr><td><!---<pre style="color: rgb(0, 0, 0); word-wrap: break-word; white-space: pre-wrap; font-weight: bold; font-size:22px; font-family:標楷體; line-height:1.5">  --->
+ 
+ 
+ 
+
+<div style="height:380px;width:100%;overflow:scroll;font-size:12px;">
+
+<!---<p id="displayDB"></p> 
+
+<h3><b>症狀及診斷:</b></h3>
+
+<p id="display"></p> 
+--->
+<h3><b>脈診圖:</b></h3>
+
+<p id="display2_0"></p> 
+<p id="display2_1"></p> 
+<p id="display2"></p> 
+<p id="display3"></p>
+
+<!---
+<h3><b>應對方劑及加減:</b></h3>
+<p id="displayF"></p> 
+
+<h3><b>針灸及外治法:</b></h3>
+<p id="displayAcup"></p> 
+
+<h3><b>本次總論:</b></h3>
+<p id="displaySummary"></p> 
+--->
+<!---<p id="displayInform"></p> --->
+
+</div>
+<table>
+ <tr><td>
+        <table>
+        <tr><td>【右脈】下拉表單選取:</td><td>
+            <form name="pulseForm_R">
+                <select name="demoSelect"> <!--onchange="tab4_R_PutItem()"> -->
+                    <option value="">Select:</option>
+                    <option value='3s')">□ □ □</option>
+                    <option value='2s')">□ □</option>
+                    <option value='1s')">□</option>
+                    <option value='3c')">○ ○ ○</option>
+                    <option value='2c')">○ ○</option>
+                    <option value='1c')">○</option>
+                    <option value='3l')">| | |</option>
+                    <option value='2l')">| |</option>
+                    <option value='1l')">|</option>
+                    <option value='3h')">$ $ $</option>
+                    <option value='2h')">$ $</option>
+                    <option value='1h')">$</option>
+                    <option value='w0')">△</option>
+                    <option value='ww')">X</option>      
+    
+                </select>
+            </form>
+        </td></tr>
+        </table>
+
+        <table>
+        <tr>
+            <td><span><button onclick="tab4_R_PutItem(11, 'ggyy')">寸_1</button></span></td>   
+            <td><span><button onclick="tab4_R_PutItem(21, 'ggyy')">關_1</button></span></td>
+            <td><span><button onclick="tab4_R_PutItem(31, 'ggyy')">尺_1</button></span></td>   
+        </tr>   
+        <tr>
+            <td><span><button onclick="tab4_R_PutItem(12, 'ggyy')">寸_2</button></span></td>
+            <td><span><button onclick="tab4_R_PutItem(22, 'ggyy')">關_2</button></span></td>
+            <td><span><button onclick="tab4_R_PutItem(32, 'ggyy')">尺_2</button></span></td>
+        </tr>   
+        <tr>
+            <td><span><button onclick="tab4_R_PutItem(13, 'ggyy')">寸_3</button></span></td>
+            <td><span><button onclick="tab4_R_PutItem(23, 'ggyy')">關_3</button></span></td>
+            <td><span><button onclick="tab4_R_PutItem(33, 'ggyy')">尺_3</button></span></td>
+        </tr>   
+        <tr>   
+            <td><span><button onclick="tab4_R_PutItem(14, 'ggyy')">寸_4</button></span></td>
+            <td><span><button onclick="tab4_R_PutItem(24, 'ggyy')">關_4</button></span></td>
+            <td><span><button onclick="tab4_R_PutItem(34, 'ggyy')">尺_4</button></span></td>
+        </tr>   
+        <tr>
+            <td><span><button onclick="tab4_R_PutItem(15, 'ggyy')">寸_5</button></span></td>
+            <td><span><button onclick="tab4_R_PutItem(25, 'ggyy')">關_5</button></span></td>
+            <td><span><button onclick="tab4_R_PutItem(35, 'ggyy')">尺_5</button></span></td>
+        </tr>   
+        </table>
+ </td>
+
+ <td>
+        <table>
+        <tr><td>【左脈】下拉表單選取:</td><td>
+            <form name="pulseForm_L">
+                <select name="demoSelect"> <!--onchange="tab4_L_PutItem()"> -->
+                    <option value="">Select:</option>
+                    <option value='3s')">□ □ □</option>
+                    <option value='2s')">□ □</option>
+                    <option value='1s')">□</option>
+                    <option value='3c')">○ ○ ○</option>
+                    <option value='2c')">○ ○</option>
+                    <option value='1c')">○</option>
+                    <option value='3l')">| | |</option>
+                    <option value='2l')">| |</option>
+                    <option value='1l')">|</option>
+                    <option value='3h')">$ $ $</option>
+                    <option value='2h')">$ $</option>
+                    <option value='1h')">$</option>
+                    <option value='w0')">△</option>
+                    <option value='ww')">X</option>      
+    
+                </select>
+            </form>
+        </td></tr>
+        </table>
+
+        <table>
+        <tr>
+            <td><span><button onclick="tab4_L_PutItem(11, 'ggyy')">寸_1</button></span></td>   
+            <td><span><button onclick="tab4_L_PutItem(21, 'ggyy')">關_1</button></span></td>
+            <td><span><button onclick="tab4_L_PutItem(31, 'ggyy')">尺_1</button></span></td>   
+        </tr>   
+        <tr>
+            <td><span><button onclick="tab4_L_PutItem(12, 'ggyy')">寸_2</button></span></td>
+            <td><span><button onclick="tab4_L_PutItem(22, 'ggyy')">關_2</button></span></td>
+            <td><span><button onclick="tab4_L_PutItem(32, 'ggyy')">尺_2</button></span></td>
+        </tr>   
+        <tr>
+            <td><span><button onclick="tab4_L_PutItem(13, 'ggyy')">寸_3</button></span></td>
+            <td><span><button onclick="tab4_L_PutItem(23, 'ggyy')">關_3</button></span></td>
+            <td><span><button onclick="tab4_L_PutItem(33, 'ggyy')">尺_3</button></span></td>
+        </tr>   
+        <tr>   
+            <td><span><button onclick="tab4_L_PutItem(14, 'ggyy')">寸_4</button></span></td>
+            <td><span><button onclick="tab4_L_PutItem(24, 'ggyy')">關_4</button></span></td>
+            <td><span><button onclick="tab4_L_PutItem(34, 'ggyy')">尺_4</button></span></td>
+        </tr>   
+        <tr>
+            <td><span><button onclick="tab4_L_PutItem(15, 'ggyy')">寸_5</button></span></td>
+            <td><span><button onclick="tab4_L_PutItem(25, 'ggyy')">關_5</button></span></td>
+            <td><span><button onclick="tab4_L_PutItem(35, 'ggyy')">尺_5</button></span></td>
+        </tr>   
+        </table>
+ </td></tr>
+
+<table>
+
+<script>
+         var allText_r = "";
+         var allText_l = "";
+         allText_r_2 = "right pulse note: ";
+         allText_l_2 = "left pulse note: ";
+
+         var p_r11 = "1:&nbsp&nbsp&nbsp";
+         var p_r12 = "2:&nbsp&nbsp&nbsp";
+         var p_r13 = "3:&nbsp&nbsp&nbsp";
+         var p_r14 = "4:&nbsp&nbsp&nbsp";
+         var p_r15 = "5:&nbsp&nbsp&nbsp";
+         var p_r21 = "1:&nbsp&nbsp&nbsp";
+         var p_r22 = "2:&nbsp&nbsp&nbsp";
+         var p_r23 = "3:&nbsp&nbsp&nbsp";
+         var p_r24 = "4:&nbsp&nbsp&nbsp";
+         var p_r25 = "5:&nbsp&nbsp&nbsp";
+         var p_r31 = "1:&nbsp&nbsp&nbsp";
+         var p_r32 = "2:&nbsp&nbsp&nbsp";
+         var p_r33 = "3:&nbsp&nbsp&nbsp";
+         var p_r34 = "4:&nbsp&nbsp&nbsp";
+         var p_r35 = "5:&nbsp&nbsp&nbsp";
+
+         var p_l11 = "1:&nbsp&nbsp&nbsp";
+         var p_l12 = "2:&nbsp&nbsp&nbsp";
+         var p_l13 = "3:&nbsp&nbsp&nbsp";
+         var p_l14 = "4:&nbsp&nbsp&nbsp";
+         var p_l15 = "5:&nbsp&nbsp&nbsp";
+         var p_l21 = "1:&nbsp&nbsp&nbsp";
+         var p_l22 = "2:&nbsp&nbsp&nbsp";
+         var p_l23 = "3:&nbsp&nbsp&nbsp";
+         var p_l24 = "4:&nbsp&nbsp&nbsp";
+         var p_l25 = "5:&nbsp&nbsp&nbsp";
+         var p_l31 = "1:&nbsp&nbsp&nbsp";
+         var p_l32 = "2:&nbsp&nbsp&nbsp";
+         var p_l33 = "3:&nbsp&nbsp&nbsp";
+         var p_l34 = "4:&nbsp&nbsp&nbsp";
+         var p_l35 = "5:&nbsp&nbsp&nbsp";
+
+         var theSelect_r = pulseForm_R.demoSelect;
+         var theSelect_l = pulseForm_L.demoSelect;
+
+         var textNow = "";
+
+         function tab4_R_PutItem(cateNow, textNowIn)
+         {
+           allText_r = "";
+           
+           textNowIn = theSelect_r[theSelect_r.selectedIndex].value;
+
+           if (textNowIn == "3s") {textNow = "□ □ □"; }
+           if (textNowIn == "2s") {textNow = "□ □"; }
+           if (textNowIn == "1s") {textNow = "□"; }
+           if (textNowIn == "3c") {textNow = "○ ○ ○"; }
+           if (textNowIn == "2c") {textNow = "○ ○"; }
+           if (textNowIn == "1c") {textNow = "○"; }
+           if (textNowIn == "3l") {textNow = "| | |"; }
+           if (textNowIn == "2l") {textNow = "| |"; }
+           if (textNowIn == "1l") {textNow = "|"; }
+           if (textNowIn == "3h") {textNow = "$ $ $"; }
+           if (textNowIn == "2h") {textNow = "$ $"; }
+           if (textNowIn == "1h") {textNow = "$"; }
+           if (textNowIn == "w0") {textNow = "△"; }
+           if (textNowIn == "ww") {textNow = "X"; }
+
+           allText_r_2 += cateNow+":"+textNowIn+"_";
+
+           allText_r += "<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" >";
+
+           if (cateNow == 11){ p_r11 += textNow;}
+           if (cateNow == 12){ p_r12 += textNow;}
+           if (cateNow == 13){ p_r13 += textNow;}
+           if (cateNow == 14){ p_r14 += textNow;}
+           if (cateNow == 15){ p_r15 += textNow;}
+           if (cateNow == 21){ p_r21 += textNow;}
+           if (cateNow == 22){ p_r22 += textNow;}
+           if (cateNow == 23){ p_r23 += textNow;}
+           if (cateNow == 24){ p_r24 += textNow;}
+           if (cateNow == 25){ p_r25 += textNow;}
+           if (cateNow == 31){ p_r31 += textNow;}
+           if (cateNow == 32){ p_r32 += textNow;}
+           if (cateNow == 33){ p_r33 += textNow;}
+           if (cateNow == 34){ p_r34 += textNow;}
+           if (cateNow == 35){ p_r35 += textNow;}
+
+           allText_r += "<tr><td rowspan='6' bgcolor='#ffffcc'>右</td><td bgcolor='#ccffcc'>寸</td><td bgcolor='#ccffcc'>關</td><td bgcolor='#ccffcc'>尺</td></tr>";	     	     
+           allText_r += "<tr><td width=\"100px\" >"+p_r11+"</td>";
+           allText_r += "<td width=\"100px\" >"+p_r21+"</td>";
+           allText_r += "<td width=\"100px\" >"+p_r31+"</td></tr>";
+           allText_r += "<tr><td>"+p_r12+"</td>";
+           allText_r += "<td>"+p_r22+"</td>";
+           allText_r += "<td>"+p_r32+"</td></tr>";
+           allText_r += "<tr><td>"+p_r13+"</td>";
+           allText_r += "<td>"+p_r23+"</td>";
+           allText_r += "<td>"+p_r33+"</td></tr>";
+           allText_r += "<tr><td>"+p_r14+"</td>";
+           allText_r += "<td>"+p_r24+"</td>";
+           allText_r += "<td>"+p_r34+"</td></tr>";
+           allText_r += "<tr><td>"+p_r15+"</td>";
+           allText_r += "<td>"+p_r25+"</td>";
+           allText_r += "<td>"+p_r35;+"</td></tr>";
+                       
+           allText_r += "</table>";           
+           
+           //document.getElementById("display2_0").innerHTML = allText_r_2; 
+           document.getElementById("display2").innerHTML = allText_r+"<br>"+allText_l; 
+         }
+
+
+         function tab4_L_PutItem(cateNow, textNowIn)
+         {
+           allText_l = "";
+           
+           textNowIn = theSelect_l[theSelect_l.selectedIndex].value;
+
+
+           if (textNowIn == "3s") {textNow = "□ □ □"; }
+           if (textNowIn == "2s") {textNow = "□ □"; }
+           if (textNowIn == "1s") {textNow = "□"; }
+           if (textNowIn == "3c") {textNow = "○ ○ ○"; }
+           if (textNowIn == "2c") {textNow = "○ ○"; }
+           if (textNowIn == "1c") {textNow = "○"; }
+           if (textNowIn == "3l") {textNow = "| | |"; }
+           if (textNowIn == "2l") {textNow = "| |"; }
+           if (textNowIn == "1l") {textNow = "|"; }
+           if (textNowIn == "3h") {textNow = "$ $ $"; }
+           if (textNowIn == "2h") {textNow = "$ $"; }
+           if (textNowIn == "1h") {textNow = "$"; }
+           if (textNowIn == "w0") {textNow = "△"; }
+           if (textNowIn == "ww") {textNow = "X"; }
+
+           allText_l_2 += cateNow+":"+textNowIn+"_";
+
+           allText_l += "<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" >";
+
+           if (cateNow == 11){ p_l11 += textNow;}
+           if (cateNow == 12){ p_l12 += textNow;}
+           if (cateNow == 13){ p_l13 += textNow;}
+           if (cateNow == 14){ p_l14 += textNow;}
+           if (cateNow == 15){ p_l15 += textNow;}
+           if (cateNow == 21){ p_l21 += textNow;}
+           if (cateNow == 22){ p_l22 += textNow;}
+           if (cateNow == 23){ p_l23 += textNow;}
+           if (cateNow == 24){ p_l24 += textNow;}
+           if (cateNow == 25){ p_l25 += textNow;}
+           if (cateNow == 31){ p_l31 += textNow;}
+           if (cateNow == 32){ p_l32 += textNow;}
+           if (cateNow == 33){ p_l33 += textNow;}
+           if (cateNow == 34){ p_l34 += textNow;}
+           if (cateNow == 35){ p_l35 += textNow;}
+
+           allText_l += "<tr><td rowspan='6' bgcolor='#ffffcc'>左</td><td bgcolor='#ccffcc'>寸</td><td bgcolor='#ccffcc'>關</td><td bgcolor='#ccffcc'>尺</td></tr>";	     
+           allText_l += "<tr><td width=\"100px\" >"+p_l11+"</td>";	     
+           allText_l += "<td width=\"100px\" >"+p_l21+"</td>";
+           allText_l += "<td width=\"100px\" >"+p_l31+"</td></tr>";
+           allText_l += "<tr><td>"+p_l12+"</td>";
+           allText_l += "<td>"+p_l22+"</td>";
+           allText_l += "<td>"+p_l32+"</td></tr>";
+           allText_l += "<tr><td>"+p_l13+"</td>";
+           allText_l += "<td>"+p_l23+"</td>";
+           allText_l += "<td>"+p_l33+"</td></tr>";
+           allText_l += "<tr><td>"+p_l14+"</td>";
+           allText_l += "<td>"+p_l24+"</td>";
+           allText_l += "<td>"+p_l34+"</td></tr>";
+           allText_l += "<tr><td>"+p_l15+"</td>";
+           allText_l += "<td>"+p_l25+"</td>";
+           allText_l += "<td>"+p_l35;+"</td></tr>";
+                       
+           allText_l += "</table>";           
+           
+           //document.getElementById("display2_1").innerHTML = allText_l_2; 
+             //document.getElementById("display3").innerHTML = allText_l;
+           document.getElementById("display2").innerHTML = allText_r+"<br>"+allText_l; 	     
+         }
+
+
+         function tab4_other_PutItem(textNowIn)
+         {
+           allText_other += textNowIn+"&nbsp;"; 
+           
+           document.getElementById("display2").innerHTML = allText_r+"<br>"+allText_l+"<br>"+allText_other; 	     
+	 }  
+
+         function tab4_reset()
+         {
+           allText_other = "";
+           allText_r = "";
+           allText_l = "";
+
+          p_r11 = "1:&nbsp&nbsp&nbsp";
+          p_r12 = "2:&nbsp&nbsp&nbsp";
+          p_r13 = "3:&nbsp&nbsp&nbsp";
+          p_r14 = "4:&nbsp&nbsp&nbsp";
+          p_r15 = "5:&nbsp&nbsp&nbsp";
+          p_r21 = "1:&nbsp&nbsp&nbsp";
+          p_r22 = "2:&nbsp&nbsp&nbsp";
+          p_r23 = "3:&nbsp&nbsp&nbsp";
+          p_r24 = "4:&nbsp&nbsp&nbsp";
+          p_r25 = "5:&nbsp&nbsp&nbsp";
+          p_r31 = "1:&nbsp&nbsp&nbsp";
+          p_r32 = "2:&nbsp&nbsp&nbsp";
+          p_r33 = "3:&nbsp&nbsp&nbsp";
+          p_r34 = "4:&nbsp&nbsp&nbsp";
+          p_r35 = "5:&nbsp&nbsp&nbsp";
+
+          p_l11 = "1:&nbsp&nbsp&nbsp";
+          p_l12 = "2:&nbsp&nbsp&nbsp";
+          p_l13 = "3:&nbsp&nbsp&nbsp";
+          p_l14 = "4:&nbsp&nbsp&nbsp";
+          p_l15 = "5:&nbsp&nbsp&nbsp";
+          p_l21 = "1:&nbsp&nbsp&nbsp";
+          p_l22 = "2:&nbsp&nbsp&nbsp";
+          p_l23 = "3:&nbsp&nbsp&nbsp";
+          p_l24 = "4:&nbsp&nbsp&nbsp";
+          p_l25 = "5:&nbsp&nbsp&nbsp";
+          p_l31 = "1:&nbsp&nbsp&nbsp";
+          p_l32 = "2:&nbsp&nbsp&nbsp";
+          p_l33 = "3:&nbsp&nbsp&nbsp";
+          p_l34 = "4:&nbsp&nbsp&nbsp";
+          p_l35 = "5:&nbsp&nbsp&nbsp";
+	     
+	     
+           document.getElementById("display2").innerHTML = "";
+	 }
+
+
+           function copyStringToClipboard (str) {
+              // Create new element                                                                                                                                                                                                                                               
+              var el = document.createElement('textarea');
+              // Set value (string to be copied)                                                                                                                                                                                                                                  
+              el.value = str;
+              // Set non-editable to avoid focus and move outside of view                                                                                                                                                                                                         
+              el.setAttribute('readonly', '');
+              el.style = {position: 'absolute', left: '-9999px'};
+              document.body.appendChild(el);
+              // Select text inside element                                                                                                                                                                                                                                       
+              el.select();
+              // Copy text to clipboard                                                                                                                                                                                                                                           
+	      document.execCommand('copy');
+              // Remove temporary element                                                                                                                                                                                                                                         
+              document.body.removeChild(el);
+           }
+
+           function copy2Clipboard(){
+             //copyStringToClipboard(document.getElementById("display2").value);
+             copyStringToClipboard(allText_r+"<br>"+allText_l+"<br>"+allText_other);
+           }  
+</script>
+<hr>
+<button onclick="tab4_other_PutItem('數脈')" type="button">數脈</button>
+<button onclick="tab4_other_PutItem('遲脈')" type="button">遲脈</button>&nbsp;
+<button onclick="tab4_other_PutItem('代脈')" type="button">代脈</button>
+<button onclick="tab4_other_PutItem('結脈')" type="button">結脈</button>
+<button onclick="tab4_other_PutItem('促脈')" type="button">促脈</button>&nbsp;&nbsp;&nbsp;&nbsp;
+<button style=" background-color: #ccffcc" onclick="tab4_reset('')" type="button">全部清除</button>&nbsp;&nbsp;&nbsp;&nbsp;
+<!---<button style=" background-color: #ccffff" onclick="copy2Clipboard('')" type="button">結果放在剪貼簿</button>--->
+
+
+</div> 
+
+<!---</pre> --->
+</td></tr> 
+</table></center>     
+
+
+
+
+
