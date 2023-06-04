@@ -8,6 +8,7 @@ document.write("<title>舌診心要總整理</title>    <center><img src=\"top_t
     <button onclick=\"location.href='cate_舌診與八綱辨證.html'\" type=\"button\">舌診與八綱辨證</button> \n\
     <button onclick=\"location.href='cate_西藥對舌象的影響.html'\" type=\"button\">西藥對舌象的影響</button> \n\
     <button onclick=\"location.href='cate_陰陽虛實之舌診心要.html'\" type=\"button\">陰陽虛實之舌診心要</button> \n\
+    <button onclick=\"location.href='cate_五行臟腑派_舌診.html'\" type=\"button\">五行臟腑派舌診</button> \n\
     <button style=\"background-color: #ccffcc;\" onclick=\"location.href='cate_舌診用方一覽.html'\" type=\"button\">舌診用方一覽</button> \n\
     </center> \n\
     <br> \n\
