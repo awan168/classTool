@@ -1,0 +1,101 @@
+ <!doctype html><html> 
+<head><meta charset="utf-8"> 
+  <style> img {   max-width: 100%;   height: auto; } </style>
+  <script>
+    var index = 0;
+    var indexNow = 0;
+    var sentence=[
+	"<center><img src='問止養生律_v.2.0/Slide19.png' alt='xxx' width='100%' height='auto' style='border:1px solid black;'></center>",
+	"<center><img src='問止養生律_v.2.0/Slide20.png' alt='xxx' width='100%' height='auto' style='border:1px solid black;'></center>",	
+	"<center><img src='問止養生律_v.2.0/Slide21.png' alt='xxx' width='100%' height='auto' style='border:1px solid black;'></center>",
+	"<center><img src='問止養生律_v.2.0/Slide22.png' alt='xxx' width='100%' height='auto' style='border:1px solid black;'></center>",	
+	"<center><img src='問止養生律_v.2.0/Slide23.png' alt='xxx' width='100%' height='auto' style='border:1px solid black;'></center>",
+	"<center><img src='問止養生律_v.2.0/Slide24.png' alt='xxx' width='100%' height='auto' style='border:1px solid black;'></center>",	
+	"<center><img src='問止養生律_v.2.0/Slide25.png' alt='xxx' width='100%' height='auto' style='border:1px solid black;'></center>",
+	"<center><img src='問止養生律_v.2.0/Slide26.png' alt='xxx' width='100%' height='auto' style='border:1px solid black;'></center>",
+	"<center><img src='fig_健人就是腳勤.png' alt='xxx' width='100%' height='auto' style='border:1px solid black;'></center>",		
+    ];
+    </script>
+</head> 
+<body>
+<script src="header.js"></script>  
+<center><table border="0" cellpadding="1" cellspacing="1" style="width:70%; height:600px"  style="float: left">
+<!---<caption>xxx</caption>--->
+<tr>  <td width="5%" valign="top"><button onclick="putNote1('u')" type="button"><span style="color: rgb(0, 0, 0); font-weight: bold; font-size:40px;"><</span></button></td>
+<!---<td bgcolor="#b3ffb3"; valign="top">--->
+<td bgcolor="#ffffff"; valign="top">
+  <div id="noteNow1">
+  </div>
+</td>
+<td width="5%" valign="top"><button onclick="putNote1('d')" type="button"><span style="color: rgb(0, 0, 0); font-weight: bold; font-size:40px;">></span></button></td>
+</tr></table>
+    <input type="text" id="userInput">輸入欲跳到問題的標碼</input>
+    <button id="submitter">Submit</button>
+    <div id="output"></div>
+    </center>    
+    <script>
+        var didClickIt = false;
+        document.getElementById("submitter").addEventListener("click",function(){
+            // same as onclick, keeps the JS and HTML separate
+            didClickIt = true;
+        });
+
+        setInterval(function(){
+            // this is the closest you get to an infinite loop in JavaScript
+            if( didClickIt ) {
+                didClickIt = false;
+                // document.write causes silly problems, do this instead (or better yet, use a library like jQuery to do this stuff for you)
+                var o=document.getElementById("output"),v=document.getElementById("userInput").value;
+                if(o.textContent!==undefined){
+                    o.textContent=v;
+                }else{
+                    o.innerText=v;
+                }
+	        indexNow = document.getElementById("userInput").value;
+		index = indexNow;
+	        document.getElementById("noteNow1").innerHTML = sentence[indexNow]+"<br>";
+            }
+        },500);
+	
+    </script>
+
+    <script>document.getElementById("noteNow1").innerHTML =sentence[0];</script>
+<script>
+																													     function putNote1(udSel)
+           {
+
+	       if (udSel == "u"){
+		   if (index == 0){
+		       index=sentence.length-1;
+		   }
+		   else{
+		       index = parseInt(index)-1;
+		   }
+	       }
+	       else if (udSel == "d"){
+		   if  (index == sentence.length-1) { index=0; }
+		   else{
+		       index = parseInt(index)+1;
+		   }
+	       }
+	       //alert(index+" : "+sentence[index]+" : "+udSel);
+	       //               document.getElementById("noteNow1").innerHTML = "    <img src='WZ_logo.png' alt='WenZu Logo' width='419' height='50'>\
+               document.getElementById("noteNow1").innerHTML = sentence[index];
+                    //height="1900"                                                                                                                                                                                                   
+           }  
+</script>
+
+
+
+</body></html> 
+
+<!---
+
+			張景岳熟地配伍心要中，熟地可與柴胡配伍治外感，可是不是說感冒了不能補嗎？另外，熟地是不是容易生痰?謝謝！
+			林老師好，您講了摸脈判斷陰虛陽虛的簡單快捷的方法，那請問陰虛陽實或者陰實陽虛這兩種情況怎麼判斷，謝謝老師
+白髮			
+			1、請林老師解一下封髓丹的藥物組成的作用機理，怎麼就叫封髓呢，三陰病使用的話如何使用，什麼情況下禁忌使用？謝謝
+2、臨床上碰到個別有些人的脈，感覺都空了，特別無力，特別虛，但是患者本人體力啥的都還可以，而且偏於怕熱，汗偏多。這種脈我沒有完全分析明白，我只知道心臟肯定是有問題，請林老師給分析一下這種脈象和身體的關係，以及大概的可能調理方向和用方思路。
+出家人的養生食療：比如豬腳姜醋用什麼替代豬腳；有出家師傅希望林老師可以出系列素食的養生
+
+--->    
