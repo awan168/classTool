@@ -12,19 +12,21 @@
         }
         .dice-container {
             display: flex;
+            flex-wrap: wrap; /* 允許換行 */
             justify-content: center;
             margin-top: 20px;
         }
         .dice {
-            width: 120px;
-            height: 120px;
+            width: 150px;
+            height: 150px;
             margin: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
             border: 2px solid #333;
-            font-size: 80px; /* 增加字體大小 */
+            font-size: 100px; /* 增加字體大小 */
             font-weight: bold;
+            flex-basis: 30%; /* 控制每行顯示三個骰子 */
         }
         button {
             padding: 10px 20px;
