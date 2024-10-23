@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>骰子隨機產生器</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .dice-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .dice {
+            width: 120px;
+            height: 120px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #333;
+            font-size: 80px; /* 增加字體大小 */
+            font-weight: bold;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .total {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>隨機骰子產生器</h1>
+    <button onclick="rollDice()">擲骰子</button>
+
+    <div class="dice-container">
+        <div class="dice" id="dice1">?</div>
+        <div class="dice" id="dice2">?</div>
+        <div class="dice" id="dice3">?</div>
+        <div class="dice" id="dice4">?</div>
+        <div class="dice" id="dice5">?</div>
+        <div class="dice" id="dice6">?</div>
+    </div>
+
+    <div class="total" id="total">總和: 0</div>
+
+    <script>
+        // 定義骰子的 ASCII 代碼表示
+        const diceFaces = {
+            1: '⚀',
+            2: '⚁',
+            3: '⚂',
+            4: '⚃',
+            5: '⚄',
+            6: '⚅'
+        };
+
+        function rollDice() {
+            let totalSum = 0;
+            // 隨機生成6個骰子並更新顯示
+            for (let i = 1; i <= 6; i++) {
+                let randomNumber = Math.floor(Math.random() * 6) + 1;
+                document.getElementById('dice' + i).textContent = diceFaces[randomNumber];
+                totalSum += randomNumber; // 計算總和
+            }
+            // 更新總和
+            document.getElementById('total').textContent = '總和: ' + totalSum;
+        }
+    </script>
+
+</body>
+</html>
